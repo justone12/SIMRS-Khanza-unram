@@ -348,9 +348,9 @@ public final class ApotekBPJSCekReferensiPoli extends javax.swing.JDialog {
                 Valid.tabelKosong(tabMode);
                 response = mapper.readTree(api.Decrypt(root.path("response").asText(),utc));
                 //response = root.path("response");
-                if(response.path("list").isArray()){
+                if(response.path("poli").isArray()){
                     i=1;
-                    for(JsonNode list:response.path("list")){
+                    for(JsonNode list:response.path("poli")){
                         tabMode.addRow(new Object[]{
                             i+".",list.path("kode").asText(),list.path("nama").asText()
                         });

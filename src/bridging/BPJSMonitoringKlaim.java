@@ -9,6 +9,7 @@ import fungsi.validasi;
 import fungsi.akses;
 import java.awt.Cursor;
 import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowEvent;
@@ -35,6 +36,7 @@ public class BPJSMonitoringKlaim extends javax.swing.JDialog {
     private sekuel Sequel=new sekuel();
     private validasi Valid=new validasi();
     private Connection koneksi=koneksiDB.condb();
+    private Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
     private PreparedStatement ps,pssep;
     private ResultSet rs,rssep;
     private final Properties prop = new Properties();
@@ -50,6 +52,7 @@ public class BPJSMonitoringKlaim extends javax.swing.JDialog {
     private JsonNode root;
     private JsonNode nameNode;
     private JsonNode response;
+    private double tagihan=0,gruper=0,tarifrs=0;
    
     /** Creates new form DlgProgramStudi
      * @param parent
@@ -961,14 +964,25 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
                             rssep=pssep.executeQuery();
                             while(rssep.next()){
                                 tabMode.addRow(new Object[]{
-                                    rssep.getString("no_sep"),rssep.getString("no_rawat"),rssep.getString("nomr"),rssep.getString("nama_pasien"),rssep.getString("tglsep"),rssep.getString("tglrujukan"),rssep.getString("no_rujukan"),
-                                    rssep.getString("kdppkrujukan"),rssep.getString("nmppkrujukan"),rssep.getString("kdppkpelayanan"),rssep.getString("nmppkpelayanan"),rssep.getString("jnspelayanan"),rssep.getString("catatan"),
-                                    rssep.getString("diagawal"),rssep.getString("nmdiagnosaawal"),rssep.getString("kdpolitujuan"),rssep.getString("nmpolitujuan"),rssep.getString("klsrawat"),rssep.getString("lakalantas").replaceAll("0","0. Bukan KLL").replaceAll("1","1. KLL Bukan KK").replaceAll("2","2. KLL dan KK").replaceAll("3","3. KK"),
-                                    rssep.getString("nmkec")+", "+rssep.getString("nmkab")+" "+rssep.getString("nmprop"),rssep.getString("user"),rssep.getString("tanggal_lahir"),rssep.getString("peserta"),rssep.getString("jkel"),
-                                    rssep.getString("no_kartu"),rssep.getString("tglpulang"),rssep.getString("asal_rujukan"),rssep.getString("eksekutif"),rssep.getString("cob"),rssep.getString("pembiayaan").replaceAll("1","1. Pribadi").replaceAll("2","2. Pemberi Kerja").replaceAll("2","3. Asuransi Lain"),rssep.getString("pjnaikkelas"),rssep.getString("notelep"),
-                                    list.path("Inacbg").path("kode").asText()+" "+list.path("Inacbg").path("nama").asText(),list.path("status").asText(),list.path("noFPK").asText(),Valid.SetAngka(list.path("biaya").path("byPengajuan").asDouble()),
-                                    Valid.SetAngka(list.path("biaya").path("bySetujui").asDouble()),Valid.SetAngka(list.path("biaya").path("byTarifGruper").asDouble()),Valid.SetAngka(list.path("biaya").path("byTarifRS").asDouble()),
-                                    Valid.SetAngka(list.path("biaya").path("byTopup").asDouble()),Valid.SetAngka(list.path("biaya").path("bySetujui").asDouble()-list.path("biaya").path("byTopup").asDouble()-list.path("biaya").path("byTarifRS").asDouble())
+                                    rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),
+                                    rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),
+                                    rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),
+                                    rs.getString(13),rs.getString(14),rs.getString(14)+" "+rs.getString(15),rs.getString(16),
+                                    rs.getString(17),rs.getString(18),rs.getString(19),rs.getString(20),
+                                    rs.getString(21),rs.getString(22),rs.getString(23),rs.getString(24),
+                                    rs.getString(25),rs.getString(26),rs.getString(27),rs.getString(28),
+                                    rs.getString(29),rs.getString(30),rs.getString(31),
+                                    list.path("Inacbg").path("kode").asText()+" "+list.path("Inacbg").path("nama").asText(),
+                                    list.path("status").asText(),list.path("noFPK").asText(),
+                                    Valid.SetAngka(list.path("biaya").path("byPengajuan").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("bySetujui").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("byTarifGruper").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("byTarifRS").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("byTopup").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("bySetujui").asDouble()-
+                                            list.path("biaya").path("byTopup").asDouble()-
+                                            list.path("biaya").path("byTarifRS").asDouble())
+                                    
                                 });
                             }
                         } catch (Exception e) {
@@ -1022,14 +1036,25 @@ private void KdKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TKdKey
                             rssep=pssep.executeQuery();
                             while(rssep.next()){
                                 tabMode.addRow(new Object[]{
-                                    rssep.getString("no_sep"),rssep.getString("no_rawat"),rssep.getString("nomr"),rssep.getString("nama_pasien"),rssep.getString("tglsep"),rssep.getString("tglrujukan"),rssep.getString("no_rujukan"),
-                                    rssep.getString("kdppkrujukan"),rssep.getString("nmppkrujukan"),rssep.getString("kdppkpelayanan"),rssep.getString("nmppkpelayanan"),rssep.getString("jnspelayanan"),rssep.getString("catatan"),
-                                    rssep.getString("diagawal"),rssep.getString("nmdiagnosaawal"),rssep.getString("kdpolitujuan"),rssep.getString("nmpolitujuan"),rssep.getString("klsrawat"),rssep.getString("lakalantas").replaceAll("0","0. Bukan KLL").replaceAll("1","1. KLL Bukan KK").replaceAll("2","2. KLL dan KK").replaceAll("3","3. KK"),
-                                    rssep.getString("nmkec")+", "+rssep.getString("nmkab")+" "+rssep.getString("nmprop"),rssep.getString("user"),rssep.getString("tanggal_lahir"),rssep.getString("peserta"),rssep.getString("jkel"),
-                                    rssep.getString("no_kartu"),rssep.getString("tglpulang"),rssep.getString("asal_rujukan"),rssep.getString("eksekutif"),rssep.getString("cob"),rssep.getString("pembiayaan").replaceAll("1","1. Pribadi").replaceAll("2","2. Pemberi Kerja").replaceAll("2","3. Asuransi Lain"),rssep.getString("pjnaikkelas"),rssep.getString("notelep"),
-                                    list.path("Inacbg").path("kode").asText()+" "+list.path("Inacbg").path("nama").asText(),list.path("status").asText(),list.path("noFPK").asText(),Valid.SetAngka(list.path("biaya").path("byPengajuan").asDouble()),
-                                    Valid.SetAngka(list.path("biaya").path("bySetujui").asDouble()),Valid.SetAngka(list.path("biaya").path("byTarifGruper").asDouble()),Valid.SetAngka(list.path("biaya").path("byTarifRS").asDouble()),
-                                    Valid.SetAngka(list.path("biaya").path("byTopup").asDouble()),Valid.SetAngka(list.path("biaya").path("bySetujui").asDouble()-list.path("biaya").path("byTopup").asDouble()-list.path("biaya").path("byTarifRS").asDouble())
+                                    rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4),
+                                    rs.getString(5),rs.getString(6),rs.getString(7),rs.getString(8),
+                                    rs.getString(9),rs.getString(10),rs.getString(11),rs.getString(12),
+                                    rs.getString(13),rs.getString(14),rs.getString(14)+" "+rs.getString(15),rs.getString(16),
+                                    rs.getString(17),rs.getString(18),rs.getString(19),rs.getString(20),
+                                    rs.getString(21),rs.getString(22),rs.getString(23),rs.getString(24),
+                                    rs.getString(25),rs.getString(26),rs.getString(27),rs.getString(28),
+                                    rs.getString(29),rs.getString(30),rs.getString(31),
+                                    list.path("Inacbg").path("kode").asText()+" "+list.path("Inacbg").path("nama").asText(),
+                                    list.path("status").asText(),list.path("noFPK").asText(),
+                                    Valid.SetAngka(list.path("biaya").path("byPengajuan").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("bySetujui").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("byTarifGruper").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("byTarifRS").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("byTopup").asDouble()),
+                                    Valid.SetAngka(list.path("biaya").path("bySetujui").asDouble()-
+                                            list.path("biaya").path("byTopup").asDouble()-
+                                            list.path("biaya").path("byTarifRS").asDouble())
+                                    
                                 });
                             }
                         } catch (Exception e) {

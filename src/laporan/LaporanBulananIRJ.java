@@ -5,6 +5,8 @@ import fungsi.validasi;
 import fungsi.akses;
 import java.awt.Cursor;
 import java.awt.Desktop;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -79,6 +81,7 @@ public class LaporanBulananIRJ extends javax.swing.JDialog {
         
         Valid.LoadTahun(Tahun);
     }
+    private Dimension screen=Toolkit.getDefaultToolkit().getScreenSize();
     private int i=0;
 
     /** This method is called from within the constructor to

@@ -33,7 +33,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex,nofollow">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Selamat Datang di EPasien <?=$_SESSION["nama_instansi"];?></title>
@@ -276,7 +275,7 @@
         <aside id="leftsidebar" class="sidebar">
             <div class="user-info">
                 <div class="image">
-                    <img src="<?='data: '.mime_content_type($_SESSION["photo"]).';base64,'.base64_encode(file_get_contents($_SESSION["photo"]));?>" width="55" height="48" alt="Photo" />&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#DDFF55">No.RM : <?=encrypt_decrypt($_SESSION["ses_pasien"],"d");?></font></b>
+                    <img src="<?=$_SESSION["photo"];?>" width="55" height="48" alt="Photo" />&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="#DDFF55">No.RM : <?=encrypt_decrypt($_SESSION["ses_pasien"],"d");?></font></b>
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?=$_SESSION["nm_pasien"];?></div>
@@ -284,7 +283,7 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="index.php?act=UpdatePassword"><i class="material-icons">person</i>Ubah Password</a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="pages/logout.php"><i class="material-icons">input</i>Log Out</a></li>
                         </ul>
@@ -310,12 +309,6 @@
                         <a href="index.php?act=RiwayatPeriksa&hal=RiwayatPeriksa">
                             <i class="material-icons">local_pharmacy</i>
                             <span>Riwayat Periksa</span>
-                        </a>
-                    </li>
-                    <li <?=$halaman=="RiwayatMCU"?"class='active'":""?>>
-                        <a href="index.php?act=RiwayatMCU&hal=RiwayatMCU">
-                            <i class="material-icons">assignment_ind</i>
-                            <span>Riwayat MCU</span>
                         </a>
                     </li>
                     <li <?=$halaman=="AntrianTindakan"?"class='active'":""?>>

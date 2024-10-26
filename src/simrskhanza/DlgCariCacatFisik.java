@@ -428,19 +428,11 @@ public final class DlgCariCacatFisik extends javax.swing.JDialog {
             Valid.tabelKosong(tabMode);
             response = root.path("cacatfisik");
             if(response.isArray()){
-                if(TCari.getText().trim().equals("")){
-                    for(JsonNode list:response){
+                for(JsonNode list:response){
+                    if(list.path("Cacat").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
                         tabMode.addRow(new Object[]{
                             list.path("ID").asText(),list.path("Cacat").asText()
                         });
-                    }
-                }else{
-                    for(JsonNode list:response){
-                        if(list.path("Cacat").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
-                            tabMode.addRow(new Object[]{
-                                list.path("ID").asText(),list.path("Cacat").asText()
-                            });
-                        }
                     }
                 }
             }

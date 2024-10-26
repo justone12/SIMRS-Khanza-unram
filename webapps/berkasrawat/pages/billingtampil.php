@@ -21,7 +21,7 @@ header("Pragma: no-cache"); // HTTP/1.0
     $kodecarabayar = getOne("select kd_pj from reg_periksa where no_rawat='$no_rawat'");
     $carabayar = getOne("select png_jawab from penjab where kd_pj='$kodecarabayar'");
     $statusrawat = getOne("select status_lanjut from reg_periksa where no_rawat='$no_rawat'");
-    if ($kodecarabayar == 'BPJ') {
+    if ($kodecarabayar == 'BPJ' || $kodecarabayar=='A19') {
         if($statusrawat=='Ralan'){
         $nomorsep = getOne("select bridging_sep.no_sep from bridging_sep where bridging_sep.no_rawat='$no_rawat' and bridging_sep.jnspelayanan='2' ");
         $doktersep = getOne("select bridging_sep.nmdpdjp from bridging_sep where bridging_sep.no_rawat='$no_rawat' and bridging_sep.jnspelayanan='2' ");

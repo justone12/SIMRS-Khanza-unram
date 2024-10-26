@@ -216,7 +216,7 @@ public class DlgUser extends javax.swing.JDialog {
                 "[P]Pulang Atas Permintaan Sendiri","[M]Master Template Hasil Radiologi","[J]Laporan Bulanan IRJ","[M]Master Template Pemeriksaan","[A]Periksa Lab MB",
                 "[A]Ubah Petugas Lab MB","[M]Penilaian Pre Operasi","[M]Penilaian Pre Anestesi","[M]Perencanaan Pemulangan","[M]Penilaian Lanjutan Risiko Jatuh Dewasa",
                 "[M]Penilaian Lanjutan Risiko Jatuh Anak","[M]Penilaian Awal Medis Ralan Geriatri","[M]Penilaian Tambahan Pasien Geriatri","[M]Skrining Nutrisi Pasien Dewasa",
-                "[M]Skrining Nutrisi Pasien Lansia","[M]Hasil USG Kandungan","[M]Skrining Nutrisi Pasien Anak","[L]Host To Host Bank Jabar","[K]Pembayaran Bank Jabar",
+                "[M]Skrining Nutrisi Pasien Lansia","[M]Hasil Pemeriksaan USG","[M]Skrining Nutrisi Pasien Anak","[L]Host To Host Bank Jabar","[K]Pembayaran Bank Jabar",
                 "[P]Pernyataan Pasien Umum","[M]Konseling Farmasi","[M]Pelayanan Informasi Obat","[M]Jawaban PIO Apoteker","[P]Persetujuan Umum","[M]Transfer Pasien Antar Ruang",
                 "[L]Referensi Praktisi Satu Sehat","[L]Referensi Pasien Satu Sehat","[L]Mapping Organisasi Satu Sehat","[L]Mapping Lokasi Satu Sehat","[L]Kirim Encounter Satu Sehat",
                 "[M]Catatan Cek GDS","[L]Kirim Condition Satu Sehat","[M]Check List Pre Operasi","[L]Kirim Observation-TTV Satu Sehat","[M]Sign-In Sebelum Anestesi",
@@ -235,25 +235,7 @@ public class DlgUser extends javax.swing.JDialog {
                 "[J]Pemeriksaan Fisik Ralan Per Penyakit","[M]Penilaian Lanjutan Risiko Jatuh Geriatri","[M]Pemantauan EWS Pasien Neonatus","[K]Validasi Persetujuan Pengajuan Biaya",
                 "[L]Riwayat Perawatan ICare BPJS","[K]Rekap Pengajuan Biaya","[M]Penilaian Awal Medis Ralan Kulit & Kelamin","[L]Host To Host Bank Mandiri","[M]Penilaian Awal Medis Pasien Hemodialisa",
                 "[M]Penilaian Level Kecemasan Ranap Anak","[M]Penilaian Lanjutan Risiko Jatuh Psikiatri","[M]Penilaian Lanjutan Skrining Fungsional","[M]Penilaian Awal Medis Ralan Fisik & Rehabilitasi",
-                "[M]Laporan Anestesi","[P]Template Persetujuan Penolakan Tindakan","[M]Penilaian Awal Medis IGD Psikiatri","[L]Referensi Setting PPK Apotek BPJS","[L]Referensi Obat Apotek BPJS",
-                "[L]Mapping Obat Apotek BPJS","[K]Pembayaran Bank Mandiri","[M]Penilaian Ulang Nyeri","[M]Penilaian Terapi Wicara","[L]Obat 23 Hari Apotek BPJS","[M]Pengkajian Restrain",
-                "[L]Pencarian SEP Apotek BPJS","[L]Monitoring Klaim Apotek BPJS","[L]Daftar Pelayanan Obat Apotek BPJS","[M]Penilaian Awal Medis Ralan Paru","[M]Catatan Keperawatan Ralan",
-                "[M]Catatan Persalinan","[M]Skor Aldrette Pasca Anestesi","[M]Skor Steward Pasca Anestesi","[M]Skor Bromage Pasca Anestesi","[M]Penilaian Pre Induksi","[M]Hasil USG Urologi",
-                "[M]Hasil USG Gynecologi","[M]Hasil Pemeriksaan EKG","[L]Hapus/Edit SEP VClaim","[L]Kirim Diet Satu Sehat","[L]Mapping Obat/Alkes/BHP Satu Sehat","[F]Ringkasan Pengadaan Barang Dapur",
-                "[L]Kirim Medication Satu Sehat","[L]Kirim Medication Request Satu Sehat","[M]Penatalaksanaan Terapi Okupasi","[L]Kirim Medication Dispense Satu Sehat","[M]Hasil USG Neonatus",
-                "[M]Hasil Endoskopi Faring/Laring","[L]Mapping Tindakan Radiologi Satu Sehat","[L]Kirim Service Request Radiologi Satu Sehat","[M]Hasil Endoskopi Hidung",
-                "[L]Kirim Specimen Radiologi Satu Sehat","[M]Master Masalah Keperawatan Neonatus","[M]Master Rencana Keperawatan Neonatus","[M]Penilaian Awal Keperawatan Ranap Neonatus",
-                "[L]Kirim Observation Radiologi Satu Sehat","[L]Kirim Diagnostic Report Radiologi Satu Sehat","[M]Hasil Endoskopi Telinga","[L]Mapping Tindakan Lab PK & MB Satu Sehat",
-                "[L]Kirim Service Request Lab PK Satu Sehat","[L]Kirim Service Request Lab MB Satu Sehat","[L]Kirim Specimen Lab PK Satu Sehat","[L]Kirim Specimen Lab MB Satu Sehat",
-                "[L]Kirim Observation Lab PK Satu Sehat","[L]Kirim Observation Lab MB Satu Sehat","[L]Kirim Diagnostic Report Lab PK Satu Sehat","[L]Kirim Diagnostic Report Lab MB Satu Sehat",
-                "[J]Kepatuhan Kelengkapan Keselamatan Bedah","[K]Nilai Piutang Per Cara Bayar Per Bulan","[K]Ringkasan Piutang Per Cara Bayar","[M]Penilaian Pasien Imunitas Rendah",
-                "[M]Keseimbangan Cairan","[M]Catatan Observasi CHBP","[M]Catatan Observasi Induksi Persalinan","[C]Kategori Penilaian SKP","[C]Kriteria Penilaian SKP","[C]Penilaian SKP Petugas/Dokter",
-                "[L]Referensi Poli Mobile JKN FKTP","[L]Referensi Dokter Mobile JKN FKTP","[C]Rekapitulasi Penilaian SKP","[K]Pembayaran Pihak Ke 3 Bank Mandiri","[L]Metode Pembayaran Bank Mandiri",
-                "[L]Bank Tujuan Transfer Bank Mandiri","[L]Kode Transaksi Tujuan Transfer Bank Mandiri","[M]Konsultasi Medik","[M]Jawaban Konsultasi Medik","[L]Referensi Alergi PCare",
-                "[L]Referensi Prognosa PCare","[J]Data Sasaran Usia Produktif","[J]Data Sasaran Usia Lansia","[M]Skrining Merokok Usia Sekolah & Remaja","[M]Skrining Kekerasan Pada Perempuan",
-                "[M]Skrining Obesitas","[M]Skrining Risiko Kanker Payudara","[M]Skrining Risiko Kanker Paru","[M]Skrining TBC","[M]Skrining Kesehatan Gigi & Mulut Remaja",
-                "[M]Penilaian Awal Keperawatan Ranap Bayi/Anak","[A]Booking MCU Perusahaan","[M]Catatan Observasi Restrain Nonfarmakologi","[M]Catatan Observasi Ventilator",
-                "[M]Catatan Anestesi-Sedasi"
+                "[M]Laporan Anestesi","[P]Template Persetujuan Penolakan Tindakan","[M]Penilaian Awal Medis IGD Psikiatri"
         };
         
         tabMode=new DefaultTableModel(null,row){
@@ -527,25 +509,6 @@ public class DlgUser extends javax.swing.JDialog {
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, 
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, 
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, 
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, 
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, 
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, 
-                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, 
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class
              };
              @Override
@@ -559,7 +522,7 @@ public class DlgUser extends javax.swing.JDialog {
         tbUser.setPreferredScrollableViewportSize(new Dimension(500,500));
         tbUser.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
-        for (i = 0; i < 1066;i++) {
+        for (i = 0; i < 981;i++) {
             TableColumn column = tbUser.getColumnModel().getColumn(i);
             switch (i) {
                 case 0:
@@ -590,13 +553,13 @@ public class DlgUser extends javax.swing.JDialog {
                     column.setPreferredWidth(63);
                     break;
                 case 9:
-                    column.setPreferredWidth(59);
+                    column.setPreferredWidth(53);
                     break;
                 case 10:
                     column.setPreferredWidth(73);
                     break;
                 case 11:
-                    column.setPreferredWidth(99);
+                    column.setPreferredWidth(95);
                     break;
                 case 12:
                     column.setPreferredWidth(84);
@@ -2956,263 +2919,8 @@ public class DlgUser extends javax.swing.JDialog {
                 case 980:
                     column.setPreferredWidth(190);
                     break;
-                case 981:
-                    column.setPreferredWidth(190);
-                    break;
-                case 982:
-                    column.setPreferredWidth(158);
-                    break;
-                case 983:
-                    column.setPreferredWidth(152);
-                    break;
-                case 984:
-                    column.setPreferredWidth(147);
-                    break;
-                case 985:
-                    column.setPreferredWidth(127);
-                    break;
-                case 986:
-                    column.setPreferredWidth(139);
-                    break;
-                case 987:
-                    column.setPreferredWidth(147);
-                    break;
-                case 988:
-                    column.setPreferredWidth(121);
-                    break;
-                case 989:
-                    column.setPreferredWidth(153);
-                    break;
-                case 990:
-                    column.setPreferredWidth(166);
-                    break;
-                case 991:
-                    column.setPreferredWidth(195);
-                    break;
-                case 992:
-                    column.setPreferredWidth(183);
-                    break;
-                case 993:
-                    column.setPreferredWidth(161);
-                    break;
-                case 994:
-                    column.setPreferredWidth(117);
-                    break;
-                case 995:
-                    column.setPreferredWidth(164);
-                    break;
-                case 996:
-                    column.setPreferredWidth(164);
-                    break;
-                case 997:
-                    column.setPreferredWidth(167);
-                    break;
-                case 998:
-                    column.setPreferredWidth(125);
-                    break;
-                case 999:
-                    column.setPreferredWidth(108);
-                    break;
-                case 1000:
-                    column.setPreferredWidth(126);
-                    break;
-                case 1001:
-                    column.setPreferredWidth(134);
-                    break;
-                case 1002:
-                    column.setPreferredWidth(132);
-                    break;
-                case 1003:
-                    column.setPreferredWidth(125);
-                    break;
-                case 1004:
-                    column.setPreferredWidth(197);
-                    break;
-                case 1005:
-                    column.setPreferredWidth(198);
-                    break;
-                case 1006:
-                    column.setPreferredWidth(158);
-                    break;
-                case 1007:
-                    column.setPreferredWidth(200);
-                    break;
-                case 1008:
-                    column.setPreferredWidth(183);
-                    break;
-                case 1009:
-                    column.setPreferredWidth(204);
-                    break;
-                case 1010:
-                    column.setPreferredWidth(120);
-                    break;
-                case 1011:
-                    column.setPreferredWidth(167);
-                    break;
-                case 1012:
-                    column.setPreferredWidth(214);
-                    break;
-                case 1013:
-                    column.setPreferredWidth(231);
-                    break;
-                case 1014:
-                    column.setPreferredWidth(136);
-                    break;
-                case 1015:
-                    column.setPreferredWidth(200);
-                    break;
-                case 1016:
-                    column.setPreferredWidth(215);
-                    break;
-                case 1017:
-                    column.setPreferredWidth(217);
-                    break;
-                case 1018:
-                    column.setPreferredWidth(245);
-                    break;
-                case 1019:
-                    column.setPreferredWidth(212);
-                    break;
-                case 1020:
-                    column.setPreferredWidth(240);
-                    break;
-                case 1021:
-                    column.setPreferredWidth(138);
-                    break;
-                case 1022:
-                    column.setPreferredWidth(226);
-                    break;
-                case 1023:
-                    column.setPreferredWidth(218);
-                    break;
-                case 1024:
-                    column.setPreferredWidth(219);
-                    break;
-                case 1025:
-                    column.setPreferredWidth(187);
-                    break;
-                case 1026:
-                    column.setPreferredWidth(188);
-                    break;
-                case 1027:
-                    column.setPreferredWidth(199);
-                    break;
-                case 1028:
-                    column.setPreferredWidth(200);
-                    break;
-                case 1029:
-                    column.setPreferredWidth(227);
-                    break;
-                case 1030:
-                    column.setPreferredWidth(229);
-                    break;
-                case 1031:
-                    column.setPreferredWidth(237);
-                    break;
-                case 1032:
-                    column.setPreferredWidth(208);
-                    break;
-                case 1033:
-                    column.setPreferredWidth(187);
-                    break;
-                case 1034:
-                    column.setPreferredWidth(190);
-                    break;
-                case 1035:
-                    column.setPreferredWidth(130);
-                    break;
-                case 1036:
-                    column.setPreferredWidth(143);
-                    break;
-                case 1037:
-                    column.setPreferredWidth(206);
-                    break;
-                case 1038:
-                    column.setPreferredWidth(133);
-                    break;
-                case 1039:
-                    column.setPreferredWidth(128);
-                    break;
-                case 1040:
-                    column.setPreferredWidth(167);
-                    break;
-                case 1041:
-                    column.setPreferredWidth(172);
-                    break;
-                case 1042:
-                    column.setPreferredWidth(186);
-                    break;
-                case 1043:
-                    column.setPreferredWidth(152);
-                    break;
-                case 1044:
-                    column.setPreferredWidth(199);
-                    break;
-                case 1045:
-                    column.setPreferredWidth(184);
-                    break;
-                case 1046:
-                    column.setPreferredWidth(188);
-                    break;
-                case 1047:
-                    column.setPreferredWidth(238);
-                    break;
-                case 1048:
-                    column.setPreferredWidth(105);
-                    break;
-                case 1049:
-                    column.setPreferredWidth(151);
-                    break;
-                case 1050:
-                    column.setPreferredWidth(132);
-                    break;
-                case 1051:
-                    column.setPreferredWidth(148);
-                    break;
-                case 1052:
-                    column.setPreferredWidth(157);
-                    break;
-                case 1053:
-                    column.setPreferredWidth(143);
-                    break;
-                case 1054:
-                    column.setPreferredWidth(220);
-                    break;
-                case 1055:
-                    column.setPreferredWidth(200);
-                    break;
-                case 1056:
-                    column.setPreferredWidth(109);
-                    break;
-                case 1057:
-                    column.setPreferredWidth(179);
-                    break;
-                case 1058:
-                    column.setPreferredWidth(156);
-                    break;
-                case 1059:
-                    column.setPreferredWidth(85);
-                    break;
-                case 1060:
-                    column.setPreferredWidth(218);
-                    break;
-                case 1061:
-                    column.setPreferredWidth(248);
-                    break;
-                case 1062:
-                    column.setPreferredWidth(145);
-                    break;
-                case 1063:
-                    column.setPreferredWidth(237);
-                    break;
-                case 1064:
-                    column.setPreferredWidth(166);
-                    break;
-                case 1065:
-                    column.setPreferredWidth(144);
-                    break;
                 default:
-                    column.setPreferredWidth(134);
+                    column.setPreferredWidth(135);
                     break;
             }
         }
@@ -3344,7 +3052,7 @@ public class DlgUser extends javax.swing.JDialog {
         MnCopyHakAkses.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnCopyHakAkses.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         MnCopyHakAkses.setName("MnCopyHakAkses"); // NOI18N
-        MnCopyHakAkses.setPreferredSize(new java.awt.Dimension(150, 26));
+        MnCopyHakAkses.setPreferredSize(new java.awt.Dimension(170, 26));
         MnCopyHakAkses.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MnCopyHakAksesActionPerformed(evt);
@@ -3359,7 +3067,7 @@ public class DlgUser extends javax.swing.JDialog {
         MnSetUser.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         MnSetUser.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         MnSetUser.setName("MnSetUser"); // NOI18N
-        MnSetUser.setPreferredSize(new java.awt.Dimension(150, 26));
+        MnSetUser.setPreferredSize(new java.awt.Dimension(170, 26));
         MnSetUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MnSetUserActionPerformed(evt);
@@ -3709,9 +3417,7 @@ public class DlgUser extends javax.swing.JDialog {
                     "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
                     "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
                     "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
-                    "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
-                    "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
-                    "'false','false','false','false'","User")==true){
+                    "'false','false','false'","User")==true){
                 tabMode.addRow(new Object[]{
                     TKd.getText(),TNmUser.getText(),Jabatan.getText(),TPass.getText(),false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
                     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
@@ -3736,9 +3442,7 @@ public class DlgUser extends javax.swing.JDialog {
                     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
                     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
                     false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
-                    false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
-                    false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
-                    false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false
+                    false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false
                 });
                 emptTeks();
                 LCount.setText(""+tabMode.getRowCount());
@@ -4764,94 +4468,9 @@ public class DlgUser extends javax.swing.JDialog {
                     "penilaian_lanjutan_resiko_jatuh_psikiatri='"+tbUser.getValueAt(i,975).toString()+"',"+
                     "penilaian_lanjutan_skrining_fungsional='"+tbUser.getValueAt(i,976).toString()+"',"+
                     "penilaian_medis_ralan_rehab_medik='"+tbUser.getValueAt(i,977).toString()+"',"+
-                    "laporan_anestesi='"+tbUser.getValueAt(i,978).toString()+"',"+
+                    "laporan_anastesi='"+tbUser.getValueAt(i,978).toString()+"',"+
                     "template_persetujuan_penolakan_tindakan='"+tbUser.getValueAt(i,979).toString()+"',"+
-                    "penilaian_medis_ralan_gawat_darurat_psikiatri='"+tbUser.getValueAt(i,980).toString()+"',"+
-                    "bpjs_referensi_setting_apotek='"+tbUser.getValueAt(i,981).toString()+"',"+
-                    "bpjs_referensi_obat_apotek='"+tbUser.getValueAt(i,982).toString()+"',"+
-                    "bpjs_mapping_obat_apotek='"+tbUser.getValueAt(i,983).toString()+"',"+
-                    "pembayaran_bank_mandiri='"+tbUser.getValueAt(i,984).toString()+"',"+
-                    "penilaian_ulang_nyeri='"+tbUser.getValueAt(i,985).toString()+"',"+
-                    "penilaian_terapi_wicara='"+tbUser.getValueAt(i,986).toString()+"',"+
-                    "bpjs_obat_23hari_apotek='"+tbUser.getValueAt(i,987).toString()+"',"+
-                    "pengkajian_restrain='"+tbUser.getValueAt(i,988).toString()+"',"+
-                    "bpjs_kunjungan_sep_apotek='"+tbUser.getValueAt(i,989).toString()+"',"+
-                    "bpjs_monitoring_klaim_apotek='"+tbUser.getValueAt(i,990).toString()+"',"+
-                    "bpjs_daftar_pelayanan_obat_apotek='"+tbUser.getValueAt(i,991).toString()+"',"+
-                    "penilaian_awal_medis_ralan_paru='"+tbUser.getValueAt(i,992).toString()+"',"+
-                    "catatan_keperawatan_ralan='"+tbUser.getValueAt(i,993).toString()+"',"+
-                    "catatan_persalinan='"+tbUser.getValueAt(i,994).toString()+"',"+
-                    "skor_aldrette_pasca_anestesi='"+tbUser.getValueAt(i,995).toString()+"',"+
-                    "skor_steward_pasca_anestesi='"+tbUser.getValueAt(i,996).toString()+"',"+
-                    "skor_bromage_pasca_anestesi='"+tbUser.getValueAt(i,997).toString()+"',"+
-                    "penilaian_pre_induksi='"+tbUser.getValueAt(i,998).toString()+"',"+
-                    "hasil_usg_urologi='"+tbUser.getValueAt(i,999).toString()+"',"+
-                    "hasil_usg_gynecologi='"+tbUser.getValueAt(i,1000).toString()+"',"+
-                    "hasil_pemeriksaan_ekg='"+tbUser.getValueAt(i,1001).toString()+"',"+
-                    "hapus_edit_sep_bpjs='"+tbUser.getValueAt(i,1002).toString()+"',"+
-                    "satu_sehat_kirim_diet='"+tbUser.getValueAt(i,1003).toString()+"',"+
-                    "satu_sehat_mapping_obat='"+tbUser.getValueAt(i,1004).toString()+"',"+
-                    "dapur_ringkasan_pembelian='"+tbUser.getValueAt(i,1005).toString()+"',"+
-                    "satu_sehat_kirim_medication='"+tbUser.getValueAt(i,1006).toString()+"',"+
-                    "satu_sehat_kirim_medicationrequest='"+tbUser.getValueAt(i,1007).toString()+"',"+
-                    "penatalaksanaan_terapi_okupasi='"+tbUser.getValueAt(i,1008).toString()+"',"+
-                    "satu_sehat_kirim_medicationdispense='"+tbUser.getValueAt(i,1009).toString()+"',"+
-                    "hasil_usg_neonatus='"+tbUser.getValueAt(i,1010).toString()+"',"+
-                    "hasil_endoskopi_faring_laring='"+tbUser.getValueAt(i,1011).toString()+"',"+
-                    "satu_sehat_mapping_radiologi='"+tbUser.getValueAt(i,1012).toString()+"',"+
-                    "satu_sehat_kirim_servicerequest_radiologi='"+tbUser.getValueAt(i,1013).toString()+"',"+
-                    "hasil_endoskopi_hidung='"+tbUser.getValueAt(i,1014).toString()+"',"+
-                    "satu_sehat_kirim_specimen_radiologi='"+tbUser.getValueAt(i,1015).toString()+"',"+
-                    "master_masalah_keperawatan_neonatus='"+tbUser.getValueAt(i,1016).toString()+"',"+
-                    "master_rencana_keperawatan_neonatus='"+tbUser.getValueAt(i,1017).toString()+"',"+
-                    "penilaian_awal_keperawatan_ranap_neonatus='"+tbUser.getValueAt(i,1018).toString()+"',"+
-                    "satu_sehat_kirim_observation_radiologi='"+tbUser.getValueAt(i,1019).toString()+"',"+
-                    "satu_sehat_kirim_diagnosticreport_radiologi='"+tbUser.getValueAt(i,1020).toString()+"',"+
-                    "hasil_endoskopi_telinga='"+tbUser.getValueAt(i,1021).toString()+"',"+
-                    "satu_sehat_mapping_lab='"+tbUser.getValueAt(i,1022).toString()+"',"+
-                    "satu_sehat_kirim_servicerequest_lab='"+tbUser.getValueAt(i,1023).toString()+"',"+
-                    "satu_sehat_kirim_servicerequest_labmb='"+tbUser.getValueAt(i,1024).toString()+"',"+
-                    "satu_sehat_kirim_specimen_lab='"+tbUser.getValueAt(i,1025).toString()+"',"+
-                    "satu_sehat_kirim_specimen_labmb='"+tbUser.getValueAt(i,1026).toString()+"',"+
-                    "satu_sehat_kirim_observation_lab='"+tbUser.getValueAt(i,1027).toString()+"',"+
-                    "satu_sehat_kirim_observation_labmb='"+tbUser.getValueAt(i,1028).toString()+"',"+
-                    "satu_sehat_kirim_diagnosticreport_lab='"+tbUser.getValueAt(i,1029).toString()+"',"+
-                    "satu_sehat_kirim_diagnosticreport_labmb='"+tbUser.getValueAt(i,1030).toString()+"',"+
-                    "kepatuhan_kelengkapan_keselamatan_bedah='"+tbUser.getValueAt(i,1031).toString()+"',"+
-                    "nilai_piutang_perjenis_bayar_per_bulan='"+tbUser.getValueAt(i,1032).toString()+"',"+
-                    "ringkasan_piutang_jenis_bayar='"+tbUser.getValueAt(i,1033).toString()+"',"+
-                    "penilaian_pasien_imunitas_rendah='"+tbUser.getValueAt(i,1034).toString()+"',"+
-                    "balance_cairan='"+tbUser.getValueAt(i,1035).toString()+"',"+
-                    "catatan_observasi_chbp='"+tbUser.getValueAt(i,1036).toString()+"',"+
-                    "catatan_observasi_induksi_persalinan='"+tbUser.getValueAt(i,1037).toString()+"',"+
-                    "skp_kategori_penilaian='"+tbUser.getValueAt(i,1038).toString()+"',"+
-                    "skp_kriteria_penilaian='"+tbUser.getValueAt(i,1039).toString()+"',"+
-                    "skp_penilaian='"+tbUser.getValueAt(i,1040).toString()+"',"+
-                    "referensi_poli_mobilejknfktp='"+tbUser.getValueAt(i,1041).toString()+"',"+
-                    "referensi_dokter_mobilejknfktp='"+tbUser.getValueAt(i,1042).toString()+"',"+
-                    "skp_rekapitulasi_penilaian='"+tbUser.getValueAt(i,1043).toString()+"',"+
-                    "pembayaran_pihak_ke3_bankmandiri='"+tbUser.getValueAt(i,1044).toString()+"',"+
-                    "metode_pembayaran_bankmandiri='"+tbUser.getValueAt(i,1045).toString()+"',"+
-                    "bank_tujuan_transfer_bankmandiri='"+tbUser.getValueAt(i,1046).toString()+"',"+
-                    "kodetransaksi_tujuan_transfer_bankmandiri='"+tbUser.getValueAt(i,1047).toString()+"',"+
-                    "konsultasi_medik='"+tbUser.getValueAt(i,1048).toString()+"',"+
-                    "jawaban_konsultasi_medik='"+tbUser.getValueAt(i,1049).toString()+"',"+
-                    "pcare_cek_alergi='"+tbUser.getValueAt(i,1050).toString()+"',"+
-                    "pcare_cek_prognosa='"+tbUser.getValueAt(i,1051).toString()+"',"+
-                    "data_sasaran_usiaproduktif='"+tbUser.getValueAt(i,1052).toString()+"',"+
-                    "data_sasaran_usialansia='"+tbUser.getValueAt(i,1053).toString()+"',"+
-                    "skrining_perilaku_merokok_sekolah_remaja='"+tbUser.getValueAt(i,1054).toString()+"',"+
-                    "skrining_kekerasan_pada_perempuan='"+tbUser.getValueAt(i,1055).toString()+"',"+
-                    "skrining_obesitas='"+tbUser.getValueAt(i,1056).toString()+"',"+
-                    "skrining_risiko_kanker_payudara='"+tbUser.getValueAt(i,1057).toString()+"',"+
-                    "skrining_risiko_kanker_paru='"+tbUser.getValueAt(i,1058).toString()+"',"+
-                    "skrining_tbc='"+tbUser.getValueAt(i,1059).toString()+"',"+
-                    "skrining_kesehatan_gigi_mulut_remaja='"+tbUser.getValueAt(i,1060).toString()+"',"+
-                    "penilaian_awal_keperawatan_ranap_bayi='"+tbUser.getValueAt(i,1061).toString()+"',"+
-                    "booking_mcu_perusahaan='"+tbUser.getValueAt(i,1062).toString()+"',"+
-                    "catatan_observasi_restrain_nonfarma='"+tbUser.getValueAt(i,1063).toString()+"',"+
-                    "catatan_observasi_ventilator='"+tbUser.getValueAt(i,1064).toString()+"',"+
-                    "catatan_anestesi_sedasi='"+tbUser.getValueAt(i,1065).toString()+"'")==true){
+                    "penilaian_medis_ralan_gawat_darurat_psikiatri='"+tbUser.getValueAt(i,980).toString()+"'")==true){
                     emptTeks();
                 }
             }         
@@ -6028,94 +5647,9 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                         "penilaian_lanjutan_resiko_jatuh_psikiatri='"+tbUser.getValueAt(barisdicopy,975).toString()+"',"+
                                         "penilaian_lanjutan_skrining_fungsional='"+tbUser.getValueAt(barisdicopy,976).toString()+"',"+
                                         "penilaian_medis_ralan_rehab_medik='"+tbUser.getValueAt(barisdicopy,977).toString()+"',"+
-                                        "laporan_anestesi='"+tbUser.getValueAt(barisdicopy,978).toString()+"',"+
+                                        "laporan_anastesi='"+tbUser.getValueAt(barisdicopy,978).toString()+"',"+
                                         "template_persetujuan_penolakan_tindakan='"+tbUser.getValueAt(barisdicopy,979).toString()+"',"+
-                                        "penilaian_medis_ralan_gawat_darurat_psikiatri='"+tbUser.getValueAt(barisdicopy,980).toString()+"',"+
-                                        "bpjs_referensi_setting_apotek='"+tbUser.getValueAt(barisdicopy,981).toString()+"',"+
-                                        "bpjs_referensi_obat_apotek='"+tbUser.getValueAt(barisdicopy,982).toString()+"',"+
-                                        "bpjs_mapping_obat_apotek='"+tbUser.getValueAt(barisdicopy,983).toString()+"',"+
-                                        "pembayaran_bank_mandiri='"+tbUser.getValueAt(barisdicopy,984).toString()+"',"+
-                                        "penilaian_ulang_nyeri='"+tbUser.getValueAt(barisdicopy,985).toString()+"',"+
-                                        "penilaian_terapi_wicara='"+tbUser.getValueAt(barisdicopy,986).toString()+"',"+
-                                        "bpjs_obat_23hari_apotek='"+tbUser.getValueAt(barisdicopy,987).toString()+"',"+
-                                        "pengkajian_restrain='"+tbUser.getValueAt(barisdicopy,988).toString()+"',"+
-                                        "bpjs_kunjungan_sep_apotek='"+tbUser.getValueAt(barisdicopy,989).toString()+"',"+
-                                        "bpjs_monitoring_klaim_apotek='"+tbUser.getValueAt(barisdicopy,990).toString()+"',"+
-                                        "bpjs_daftar_pelayanan_obat_apotek='"+tbUser.getValueAt(barisdicopy,991).toString()+"',"+
-                                        "penilaian_awal_medis_ralan_paru='"+tbUser.getValueAt(barisdicopy,992).toString()+"',"+
-                                        "catatan_keperawatan_ralan='"+tbUser.getValueAt(barisdicopy,993).toString()+"',"+
-                                        "catatan_persalinan='"+tbUser.getValueAt(barisdicopy,994).toString()+"',"+
-                                        "skor_aldrette_pasca_anestesi='"+tbUser.getValueAt(barisdicopy,995).toString()+"',"+
-                                        "skor_steward_pasca_anestesi='"+tbUser.getValueAt(barisdicopy,996).toString()+"',"+
-                                        "skor_bromage_pasca_anestesi='"+tbUser.getValueAt(barisdicopy,997).toString()+"',"+
-                                        "penilaian_pre_induksi='"+tbUser.getValueAt(barisdicopy,998).toString()+"',"+
-                                        "hasil_usg_urologi='"+tbUser.getValueAt(barisdicopy,999).toString()+"',"+
-                                        "hasil_usg_gynecologi='"+tbUser.getValueAt(barisdicopy,1000).toString()+"',"+
-                                        "hasil_pemeriksaan_ekg='"+tbUser.getValueAt(barisdicopy,1001).toString()+"',"+
-                                        "hapus_edit_sep_bpjs='"+tbUser.getValueAt(barisdicopy,1002).toString()+"',"+
-                                        "satu_sehat_kirim_diet='"+tbUser.getValueAt(barisdicopy,1003).toString()+"',"+
-                                        "satu_sehat_mapping_obat='"+tbUser.getValueAt(barisdicopy,1004).toString()+"',"+
-                                        "dapur_ringkasan_pembelian='"+tbUser.getValueAt(barisdicopy,1005).toString()+"',"+
-                                        "satu_sehat_kirim_medication='"+tbUser.getValueAt(barisdicopy,1006).toString()+"',"+
-                                        "satu_sehat_kirim_medicationrequest='"+tbUser.getValueAt(barisdicopy,1007).toString()+"',"+
-                                        "penatalaksanaan_terapi_okupasi='"+tbUser.getValueAt(barisdicopy,1008).toString()+"',"+
-                                        "satu_sehat_kirim_medicationdispense='"+tbUser.getValueAt(barisdicopy,1009).toString()+"',"+
-                                        "hasil_usg_neonatus='"+tbUser.getValueAt(barisdicopy,1010).toString()+"',"+
-                                        "hasil_endoskopi_faring_laring='"+tbUser.getValueAt(barisdicopy,1011).toString()+"',"+
-                                        "satu_sehat_mapping_radiologi='"+tbUser.getValueAt(barisdicopy,1012).toString()+"',"+
-                                        "satu_sehat_kirim_servicerequest_radiologi='"+tbUser.getValueAt(barisdicopy,1013).toString()+"',"+
-                                        "hasil_endoskopi_hidung='"+tbUser.getValueAt(barisdicopy,1014).toString()+"',"+
-                                        "satu_sehat_kirim_specimen_radiologi='"+tbUser.getValueAt(barisdicopy,1015).toString()+"',"+
-                                        "master_masalah_keperawatan_neonatus='"+tbUser.getValueAt(barisdicopy,1016).toString()+"',"+
-                                        "master_rencana_keperawatan_neonatus='"+tbUser.getValueAt(barisdicopy,1017).toString()+"',"+
-                                        "penilaian_awal_keperawatan_ranap_neonatus='"+tbUser.getValueAt(barisdicopy,1018).toString()+"',"+
-                                        "satu_sehat_kirim_observation_radiologi='"+tbUser.getValueAt(barisdicopy,1019).toString()+"',"+
-                                        "satu_sehat_kirim_diagnosticreport_radiologi='"+tbUser.getValueAt(barisdicopy,1020).toString()+"',"+
-                                        "hasil_endoskopi_telinga='"+tbUser.getValueAt(barisdicopy,1021).toString()+"',"+
-                                        "satu_sehat_mapping_lab='"+tbUser.getValueAt(barisdicopy,1022).toString()+"',"+
-                                        "satu_sehat_kirim_servicerequest_lab='"+tbUser.getValueAt(barisdicopy,1023).toString()+"',"+
-                                        "satu_sehat_kirim_servicerequest_labmb='"+tbUser.getValueAt(barisdicopy,1024).toString()+"',"+
-                                        "satu_sehat_kirim_specimen_lab='"+tbUser.getValueAt(barisdicopy,1025).toString()+"',"+
-                                        "satu_sehat_kirim_specimen_labmb='"+tbUser.getValueAt(barisdicopy,1026).toString()+"',"+
-                                        "satu_sehat_kirim_observation_lab='"+tbUser.getValueAt(barisdicopy,1027).toString()+"',"+
-                                        "satu_sehat_kirim_observation_labmb='"+tbUser.getValueAt(barisdicopy,1028).toString()+"',"+
-                                        "satu_sehat_kirim_diagnosticreport_lab='"+tbUser.getValueAt(barisdicopy,1029).toString()+"',"+
-                                        "satu_sehat_kirim_diagnosticreport_labmb='"+tbUser.getValueAt(barisdicopy,1030).toString()+"',"+
-                                        "kepatuhan_kelengkapan_keselamatan_bedah='"+tbUser.getValueAt(barisdicopy,1031).toString()+"',"+
-                                        "nilai_piutang_perjenis_bayar_per_bulan='"+tbUser.getValueAt(barisdicopy,1032).toString()+"',"+
-                                        "ringkasan_piutang_jenis_bayar='"+tbUser.getValueAt(barisdicopy,1033).toString()+"',"+
-                                        "penilaian_pasien_imunitas_rendah='"+tbUser.getValueAt(barisdicopy,1034).toString()+"',"+
-                                        "balance_cairan='"+tbUser.getValueAt(barisdicopy,1035).toString()+"',"+
-                                        "catatan_observasi_chbp='"+tbUser.getValueAt(barisdicopy,1036).toString()+"',"+
-                                        "catatan_observasi_induksi_persalinan='"+tbUser.getValueAt(barisdicopy,1037).toString()+"',"+
-                                        "skp_kategori_penilaian='"+tbUser.getValueAt(barisdicopy,1038).toString()+"',"+
-                                        "skp_kriteria_penilaian='"+tbUser.getValueAt(barisdicopy,1039).toString()+"',"+
-                                        "skp_penilaian='"+tbUser.getValueAt(barisdicopy,1040).toString()+"',"+
-                                        "referensi_poli_mobilejknfktp='"+tbUser.getValueAt(barisdicopy,1041).toString()+"',"+
-                                        "referensi_dokter_mobilejknfktp='"+tbUser.getValueAt(barisdicopy,1042).toString()+"',"+
-                                        "skp_rekapitulasi_penilaian='"+tbUser.getValueAt(barisdicopy,1043).toString()+"',"+
-                                        "pembayaran_pihak_ke3_bankmandiri='"+tbUser.getValueAt(barisdicopy,1044).toString()+"',"+
-                                        "metode_pembayaran_bankmandiri='"+tbUser.getValueAt(barisdicopy,1045).toString()+"',"+
-                                        "bank_tujuan_transfer_bankmandiri='"+tbUser.getValueAt(barisdicopy,1046).toString()+"',"+
-                                        "kodetransaksi_tujuan_transfer_bankmandiri='"+tbUser.getValueAt(barisdicopy,1047).toString()+"',"+
-                                        "konsultasi_medik='"+tbUser.getValueAt(barisdicopy,1048).toString()+"',"+
-                                        "jawaban_konsultasi_medik='"+tbUser.getValueAt(barisdicopy,1049).toString()+"',"+
-                                        "pcare_cek_alergi='"+tbUser.getValueAt(barisdicopy,1050).toString()+"',"+
-                                        "pcare_cek_prognosa='"+tbUser.getValueAt(barisdicopy,1051).toString()+"',"+
-                                        "data_sasaran_usiaproduktif='"+tbUser.getValueAt(barisdicopy,1052).toString()+"',"+
-                                        "data_sasaran_usialansia='"+tbUser.getValueAt(barisdicopy,1053).toString()+"',"+
-                                        "skrining_perilaku_merokok_sekolah_remaja='"+tbUser.getValueAt(barisdicopy,1054).toString()+"',"+
-                                        "skrining_kekerasan_pada_perempuan='"+tbUser.getValueAt(barisdicopy,1055).toString()+"',"+
-                                        "skrining_obesitas='"+tbUser.getValueAt(barisdicopy,1056).toString()+"',"+
-                                        "skrining_risiko_kanker_payudara='"+tbUser.getValueAt(barisdicopy,1057).toString()+"',"+
-                                        "skrining_risiko_kanker_paru='"+tbUser.getValueAt(barisdicopy,1058).toString()+"',"+
-                                        "skrining_tbc='"+tbUser.getValueAt(barisdicopy,1059).toString()+"',"+
-                                        "skrining_kesehatan_gigi_mulut_remaja='"+tbUser.getValueAt(barisdicopy,1060).toString()+"',"+
-                                        "penilaian_awal_keperawatan_ranap_bayi='"+tbUser.getValueAt(barisdicopy,1061).toString()+"',"+
-                                        "booking_mcu_perusahaan='"+tbUser.getValueAt(barisdicopy,1062).toString()+"',"+
-                                        "catatan_observasi_restrain_nonfarma='"+tbUser.getValueAt(barisdicopy,1063).toString()+"',"+
-                                        "catatan_observasi_ventilator='"+tbUser.getValueAt(barisdicopy,1064).toString()+"',"+
-                                        "catatan_anestesi_sedasi='"+tbUser.getValueAt(barisdicopy,1065).toString()+"'");
+                                        "penilaian_medis_ralan_gawat_darurat_psikiatri='"+tbUser.getValueAt(barisdicopy,980).toString()+"'");
                                 }
                                 userdicopy="";
                                 copyhakakses="";
@@ -6400,26 +5934,7 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                 "user.pemeriksaan_fisik_ralan_per_penyakit,user.penilaian_lanjutan_resiko_jatuh_geriatri,user.pemantauan_ews_neonatus,user.validasi_persetujuan_pengajuan_biaya,"+
                 "user.riwayat_perawatan_icare_bpjs,user.rekap_pengajuan_biaya,user.penilaian_awal_medis_ralan_kulit_kelamin,user.akun_host_to_host_bank_mandiri,"+
                 "user.penilaian_medis_hemodialisa,user.penilaian_level_kecemasan_ranap_anak,user.penilaian_lanjutan_resiko_jatuh_psikiatri,user.penilaian_lanjutan_skrining_fungsional,"+
-                "user.penilaian_medis_ralan_rehab_medik,user.laporan_anestesi,user.template_persetujuan_penolakan_tindakan,user.penilaian_medis_ralan_gawat_darurat_psikiatri,"+
-                "user.bpjs_referensi_setting_apotek,user.bpjs_referensi_obat_apotek,user.bpjs_mapping_obat_apotek,user.pembayaran_bank_mandiri,user.penilaian_ulang_nyeri,"+
-                "user.penilaian_terapi_wicara,user.bpjs_obat_23hari_apotek,user.pengkajian_restrain,user.bpjs_kunjungan_sep_apotek,user.bpjs_monitoring_klaim_apotek,"+
-                "user.bpjs_daftar_pelayanan_obat_apotek,user.penilaian_awal_medis_ralan_paru,user.catatan_keperawatan_ralan,user.catatan_persalinan,user.skor_aldrette_pasca_anestesi,"+
-                "user.skor_steward_pasca_anestesi,user.skor_bromage_pasca_anestesi,user.penilaian_pre_induksi,user.hasil_usg_urologi,user.hasil_usg_gynecologi,user.hasil_pemeriksaan_ekg,"+
-                "user.hapus_edit_sep_bpjs,user.satu_sehat_kirim_diet,user.satu_sehat_mapping_obat,user.dapur_ringkasan_pembelian,user.satu_sehat_kirim_medication,"+
-                "user.satu_sehat_kirim_medicationrequest,user.penatalaksanaan_terapi_okupasi,user.satu_sehat_kirim_medicationdispense,user.hasil_usg_neonatus,"+
-                "user.hasil_endoskopi_faring_laring,user.satu_sehat_mapping_radiologi,user.satu_sehat_kirim_servicerequest_radiologi,user.hasil_endoskopi_hidung,"+
-                "user.satu_sehat_kirim_specimen_radiologi,user.master_masalah_keperawatan_neonatus,user.master_rencana_keperawatan_neonatus,user.penilaian_awal_keperawatan_ranap_neonatus,"+
-                "user.satu_sehat_kirim_observation_radiologi,user.satu_sehat_kirim_diagnosticreport_radiologi,user.hasil_endoskopi_telinga,user.satu_sehat_mapping_lab,"+
-                "user.satu_sehat_kirim_servicerequest_lab,user.satu_sehat_kirim_servicerequest_labmb,user.satu_sehat_kirim_specimen_lab,user.satu_sehat_kirim_specimen_labmb,"+
-                "user.satu_sehat_kirim_observation_lab,user.satu_sehat_kirim_observation_labmb,user.satu_sehat_kirim_diagnosticreport_lab,user.satu_sehat_kirim_diagnosticreport_labmb,"+
-                "user.kepatuhan_kelengkapan_keselamatan_bedah,user.nilai_piutang_perjenis_bayar_per_bulan,user.ringkasan_piutang_jenis_bayar,user.penilaian_pasien_imunitas_rendah,"+
-                "user.balance_cairan,user.catatan_observasi_chbp,user.catatan_observasi_induksi_persalinan,user.skp_kategori_penilaian,user.skp_kriteria_penilaian,"+
-                "user.skp_penilaian,user.referensi_poli_mobilejknfktp,user.referensi_dokter_mobilejknfktp,user.skp_rekapitulasi_penilaian,user.pembayaran_pihak_ke3_bankmandiri,"+
-                "user.metode_pembayaran_bankmandiri,user.bank_tujuan_transfer_bankmandiri,user.kodetransaksi_tujuan_transfer_bankmandiri,user.konsultasi_medik,user.jawaban_konsultasi_medik,"+
-                "user.pcare_cek_alergi,user.pcare_cek_prognosa,user.data_sasaran_usiaproduktif,user.data_sasaran_usialansia,user.skrining_perilaku_merokok_sekolah_remaja,"+
-                "user.skrining_kekerasan_pada_perempuan,user.skrining_obesitas,user.skrining_risiko_kanker_payudara,user.skrining_risiko_kanker_paru,user.skrining_tbc,"+
-                "user.skrining_kesehatan_gigi_mulut_remaja,user.penilaian_awal_keperawatan_ranap_bayi,user.booking_mcu_perusahaan,user.catatan_observasi_restrain_nonfarma,"+
-                "user.catatan_observasi_ventilator,user.catatan_anestesi_sedasi from user order by AES_DECRYPT(user.id_user,'nur')");
+                "user.penilaian_medis_ralan_rehab_medik,user.laporan_anastesi,user.template_persetujuan_penolakan_tindakan,user.penilaian_medis_ralan_gawat_darurat_psikiatri from user order by AES_DECRYPT(user.id_user,'nur')");
             try {
                 rs=ps.executeQuery();
                 while(rs.next()){
@@ -7410,94 +6925,9 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                rs.getBoolean("penilaian_lanjutan_resiko_jatuh_psikiatri"),
                                rs.getBoolean("penilaian_lanjutan_skrining_fungsional"),
                                rs.getBoolean("penilaian_medis_ralan_rehab_medik"),
-                               rs.getBoolean("laporan_anestesi"),
+                               rs.getBoolean("laporan_anastesi"),
                                rs.getBoolean("template_persetujuan_penolakan_tindakan"),
-                               rs.getBoolean("penilaian_medis_ralan_gawat_darurat_psikiatri"),
-                               rs.getBoolean("bpjs_referensi_setting_apotek"),
-                               rs.getBoolean("bpjs_referensi_obat_apotek"),
-                               rs.getBoolean("bpjs_mapping_obat_apotek"),
-                               rs.getBoolean("pembayaran_bank_mandiri"),
-                               rs.getBoolean("penilaian_ulang_nyeri"),
-                               rs.getBoolean("penilaian_terapi_wicara"),
-                               rs.getBoolean("bpjs_obat_23hari_apotek"),
-                               rs.getBoolean("pengkajian_restrain"),
-                               rs.getBoolean("bpjs_kunjungan_sep_apotek"),
-                               rs.getBoolean("bpjs_monitoring_klaim_apotek"),
-                               rs.getBoolean("bpjs_daftar_pelayanan_obat_apotek"),
-                               rs.getBoolean("penilaian_awal_medis_ralan_paru"),
-                               rs.getBoolean("catatan_keperawatan_ralan"),
-                               rs.getBoolean("catatan_persalinan"),
-                               rs.getBoolean("skor_aldrette_pasca_anestesi"),
-                               rs.getBoolean("skor_steward_pasca_anestesi"),
-                               rs.getBoolean("skor_bromage_pasca_anestesi"),
-                               rs.getBoolean("penilaian_pre_induksi"),
-                               rs.getBoolean("hasil_usg_urologi"),
-                               rs.getBoolean("hasil_usg_gynecologi"),
-                               rs.getBoolean("hasil_pemeriksaan_ekg"),
-                               rs.getBoolean("hapus_edit_sep_bpjs"),
-                               rs.getBoolean("satu_sehat_kirim_diet"),
-                               rs.getBoolean("satu_sehat_mapping_obat"),
-                               rs.getBoolean("dapur_ringkasan_pembelian"),
-                               rs.getBoolean("satu_sehat_kirim_medication"),
-                               rs.getBoolean("satu_sehat_kirim_medicationrequest"),
-                               rs.getBoolean("penatalaksanaan_terapi_okupasi"),
-                               rs.getBoolean("satu_sehat_kirim_medicationdispense"),
-                               rs.getBoolean("hasil_usg_neonatus"),
-                               rs.getBoolean("hasil_endoskopi_faring_laring"),
-                               rs.getBoolean("satu_sehat_mapping_radiologi"),
-                               rs.getBoolean("satu_sehat_kirim_servicerequest_radiologi"),
-                               rs.getBoolean("hasil_endoskopi_hidung"),
-                               rs.getBoolean("satu_sehat_kirim_specimen_radiologi"),
-                               rs.getBoolean("master_masalah_keperawatan_neonatus"),
-                               rs.getBoolean("master_rencana_keperawatan_neonatus"),
-                               rs.getBoolean("penilaian_awal_keperawatan_ranap_neonatus"),
-                               rs.getBoolean("satu_sehat_kirim_observation_radiologi"),
-                               rs.getBoolean("satu_sehat_kirim_diagnosticreport_radiologi"),
-                               rs.getBoolean("hasil_endoskopi_telinga"),
-                               rs.getBoolean("satu_sehat_mapping_lab"),
-                               rs.getBoolean("satu_sehat_kirim_servicerequest_lab"),
-                               rs.getBoolean("satu_sehat_kirim_servicerequest_labmb"),
-                               rs.getBoolean("satu_sehat_kirim_specimen_lab"),
-                               rs.getBoolean("satu_sehat_kirim_specimen_labmb"),
-                               rs.getBoolean("satu_sehat_kirim_observation_lab"),
-                               rs.getBoolean("satu_sehat_kirim_observation_labmb"),
-                               rs.getBoolean("satu_sehat_kirim_diagnosticreport_lab"),
-                               rs.getBoolean("satu_sehat_kirim_diagnosticreport_labmb"),
-                               rs.getBoolean("kepatuhan_kelengkapan_keselamatan_bedah"),
-                               rs.getBoolean("nilai_piutang_perjenis_bayar_per_bulan"),
-                               rs.getBoolean("ringkasan_piutang_jenis_bayar"),
-                               rs.getBoolean("penilaian_pasien_imunitas_rendah"),
-                               rs.getBoolean("balance_cairan"),
-                               rs.getBoolean("catatan_observasi_chbp"),
-                               rs.getBoolean("catatan_observasi_induksi_persalinan"),
-                               rs.getBoolean("skp_kategori_penilaian"),
-                               rs.getBoolean("skp_kriteria_penilaian"),
-                               rs.getBoolean("skp_penilaian"),
-                               rs.getBoolean("referensi_poli_mobilejknfktp"),
-                               rs.getBoolean("referensi_dokter_mobilejknfktp"),
-                               rs.getBoolean("skp_rekapitulasi_penilaian"),
-                               rs.getBoolean("pembayaran_pihak_ke3_bankmandiri"),
-                               rs.getBoolean("metode_pembayaran_bankmandiri"),
-                               rs.getBoolean("bank_tujuan_transfer_bankmandiri"),
-                               rs.getBoolean("kodetransaksi_tujuan_transfer_bankmandiri"),
-                               rs.getBoolean("konsultasi_medik"),
-                               rs.getBoolean("jawaban_konsultasi_medik"),
-                               rs.getBoolean("pcare_cek_alergi"),
-                               rs.getBoolean("pcare_cek_prognosa"),
-                               rs.getBoolean("data_sasaran_usiaproduktif"),
-                               rs.getBoolean("data_sasaran_usialansia"),
-                               rs.getBoolean("skrining_perilaku_merokok_sekolah_remaja"),
-                               rs.getBoolean("skrining_kekerasan_pada_perempuan"),
-                               rs.getBoolean("skrining_obesitas"),
-                               rs.getBoolean("skrining_risiko_kanker_payudara"),
-                               rs.getBoolean("skrining_risiko_kanker_paru"),
-                               rs.getBoolean("skrining_tbc"),
-                               rs.getBoolean("skrining_kesehatan_gigi_mulut_remaja"),
-                               rs.getBoolean("penilaian_awal_keperawatan_ranap_bayi"),
-                               rs.getBoolean("booking_mcu_perusahaan"),
-                               rs.getBoolean("catatan_observasi_restrain_nonfarma"),
-                               rs.getBoolean("catatan_observasi_ventilator"),
-                               rs.getBoolean("catatan_anestesi_sedasi")
+                               rs.getBoolean("penilaian_medis_ralan_gawat_darurat_psikiatri")
                             });
                         }   
                     } catch (Exception e) {
@@ -8477,94 +7907,9 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                            rs.getBoolean("penilaian_lanjutan_resiko_jatuh_psikiatri"),
                            rs.getBoolean("penilaian_lanjutan_skrining_fungsional"),
                            rs.getBoolean("penilaian_medis_ralan_rehab_medik"),
-                           rs.getBoolean("laporan_anestesi"),
+                           rs.getBoolean("laporan_anastesi"),
                            rs.getBoolean("template_persetujuan_penolakan_tindakan"),
-                           rs.getBoolean("penilaian_medis_ralan_gawat_darurat_psikiatri"),
-                           rs.getBoolean("bpjs_referensi_setting_apotek"),
-                           rs.getBoolean("bpjs_referensi_obat_apotek"),
-                           rs.getBoolean("bpjs_mapping_obat_apotek"),
-                           rs.getBoolean("pembayaran_bank_mandiri"),
-                           rs.getBoolean("penilaian_ulang_nyeri"),
-                           rs.getBoolean("penilaian_terapi_wicara"),
-                           rs.getBoolean("bpjs_obat_23hari_apotek"),
-                           rs.getBoolean("pengkajian_restrain"),
-                           rs.getBoolean("bpjs_kunjungan_sep_apotek"),
-                           rs.getBoolean("bpjs_monitoring_klaim_apotek"),
-                           rs.getBoolean("bpjs_daftar_pelayanan_obat_apotek"),
-                           rs.getBoolean("penilaian_awal_medis_ralan_paru"),
-                           rs.getBoolean("catatan_keperawatan_ralan"),
-                           rs.getBoolean("catatan_persalinan"),
-                           rs.getBoolean("skor_aldrette_pasca_anestesi"),
-                           rs.getBoolean("skor_steward_pasca_anestesi"),
-                           rs.getBoolean("skor_bromage_pasca_anestesi"),
-                           rs.getBoolean("penilaian_pre_induksi"),
-                           rs.getBoolean("hasil_usg_urologi"),
-                           rs.getBoolean("hasil_usg_gynecologi"),
-                           rs.getBoolean("hasil_pemeriksaan_ekg"),
-                           rs.getBoolean("hapus_edit_sep_bpjs"),
-                           rs.getBoolean("satu_sehat_kirim_diet"),
-                           rs.getBoolean("satu_sehat_mapping_obat"),
-                           rs.getBoolean("dapur_ringkasan_pembelian"),
-                           rs.getBoolean("satu_sehat_kirim_medication"),
-                           rs.getBoolean("satu_sehat_kirim_medicationrequest"),
-                           rs.getBoolean("penatalaksanaan_terapi_okupasi"),
-                           rs.getBoolean("satu_sehat_kirim_medicationdispense"),
-                           rs.getBoolean("hasil_usg_neonatus"),
-                           rs.getBoolean("hasil_endoskopi_faring_laring"),
-                           rs.getBoolean("satu_sehat_mapping_radiologi"),
-                           rs.getBoolean("satu_sehat_kirim_servicerequest_radiologi"),
-                           rs.getBoolean("hasil_endoskopi_hidung"),
-                           rs.getBoolean("satu_sehat_kirim_specimen_radiologi"),
-                           rs.getBoolean("master_masalah_keperawatan_neonatus"),
-                           rs.getBoolean("master_rencana_keperawatan_neonatus"),
-                           rs.getBoolean("penilaian_awal_keperawatan_ranap_neonatus"),
-                           rs.getBoolean("satu_sehat_kirim_observation_radiologi"),
-                           rs.getBoolean("satu_sehat_kirim_diagnosticreport_radiologi"),
-                           rs.getBoolean("hasil_endoskopi_telinga"),
-                           rs.getBoolean("satu_sehat_mapping_lab"),
-                           rs.getBoolean("satu_sehat_kirim_servicerequest_lab"),
-                           rs.getBoolean("satu_sehat_kirim_servicerequest_labmb"),
-                           rs.getBoolean("satu_sehat_kirim_specimen_lab"),
-                           rs.getBoolean("satu_sehat_kirim_specimen_labmb"),
-                           rs.getBoolean("satu_sehat_kirim_observation_lab"),
-                           rs.getBoolean("satu_sehat_kirim_observation_labmb"),
-                           rs.getBoolean("satu_sehat_kirim_diagnosticreport_lab"),
-                           rs.getBoolean("satu_sehat_kirim_diagnosticreport_labmb"),
-                           rs.getBoolean("kepatuhan_kelengkapan_keselamatan_bedah"),
-                           rs.getBoolean("nilai_piutang_perjenis_bayar_per_bulan"),
-                           rs.getBoolean("ringkasan_piutang_jenis_bayar"),
-                           rs.getBoolean("penilaian_pasien_imunitas_rendah"),
-                           rs.getBoolean("balance_cairan"),
-                           rs.getBoolean("catatan_observasi_chbp"),
-                           rs.getBoolean("catatan_observasi_induksi_persalinan"),
-                           rs.getBoolean("skp_kategori_penilaian"),
-                           rs.getBoolean("skp_kriteria_penilaian"),
-                           rs.getBoolean("skp_penilaian"),
-                           rs.getBoolean("referensi_poli_mobilejknfktp"),
-                           rs.getBoolean("referensi_dokter_mobilejknfktp"),
-                           rs.getBoolean("skp_rekapitulasi_penilaian"),
-                           rs.getBoolean("pembayaran_pihak_ke3_bankmandiri"),
-                           rs.getBoolean("metode_pembayaran_bankmandiri"),
-                           rs.getBoolean("bank_tujuan_transfer_bankmandiri"),
-                           rs.getBoolean("kodetransaksi_tujuan_transfer_bankmandiri"),
-                           rs.getBoolean("konsultasi_medik"),
-                           rs.getBoolean("jawaban_konsultasi_medik"),
-                           rs.getBoolean("pcare_cek_alergi"),
-                           rs.getBoolean("pcare_cek_prognosa"),
-                           rs.getBoolean("data_sasaran_usiaproduktif"),
-                           rs.getBoolean("data_sasaran_usialansia"),
-                           rs.getBoolean("skrining_perilaku_merokok_sekolah_remaja"),
-                           rs.getBoolean("skrining_kekerasan_pada_perempuan"),
-                           rs.getBoolean("skrining_obesitas"),
-                           rs.getBoolean("skrining_risiko_kanker_payudara"),
-                           rs.getBoolean("skrining_risiko_kanker_paru"),
-                           rs.getBoolean("skrining_tbc"),
-                           rs.getBoolean("skrining_kesehatan_gigi_mulut_remaja"),
-                           rs.getBoolean("penilaian_awal_keperawatan_ranap_bayi"),
-                           rs.getBoolean("booking_mcu_perusahaan"),
-                           rs.getBoolean("catatan_observasi_restrain_nonfarma"),
-                           rs.getBoolean("catatan_observasi_ventilator"),
-                           rs.getBoolean("catatan_anestesi_sedasi")
+                            rs.getBoolean("penilaian_medis_ralan_gawat_darurat_psikiatri")
                         });
                     }                                             
                  }

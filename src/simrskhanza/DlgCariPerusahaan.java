@@ -434,19 +434,11 @@ public final class DlgCariPerusahaan extends javax.swing.JDialog {
             Valid.tabelKosong(tabMode);
             response = root.path("perusahaan");
             if(response.isArray()){
-                if(TCari.getText().trim().equals("")){
-                    for(JsonNode list:response){
+                for(JsonNode list:response){
+                    if(list.path("Kode").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("NamaInstansi").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("Kota").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
                         tabMode.addRow(new Object[]{
                             list.path("Kode").asText(),list.path("NamaInstansi").asText(),list.path("AlamatInstansi").asText(),list.path("Kota").asText(),list.path("NoTelp").asText()
                         });
-                    }
-                }else{
-                    for(JsonNode list:response){
-                        if(list.path("Kode").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("NamaInstansi").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("Kota").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
-                            tabMode.addRow(new Object[]{
-                                list.path("Kode").asText(),list.path("NamaInstansi").asText(),list.path("AlamatInstansi").asText(),list.path("Kota").asText(),list.path("NoTelp").asText()
-                            });
-                        }
                     }
                 }
             }

@@ -51,7 +51,6 @@ import widget.ComboBox;
 import widget.Tanggal;
 import widget.TextArea;
 import java.io.File;
-import widget.TextBox;
 /**
  *
  * @author Owner
@@ -980,22 +979,6 @@ public final class validasi {
             kiri.requestFocus();
         }
     }
-
-    public void pindah2(KeyEvent evt, TextArea kiri, Tanggal kanan) {
-        if(evt.getKeyCode()==KeyEvent.VK_TAB){
-            kanan.requestFocus();
-        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_UP){
-            kiri.requestFocus();
-        }
-    }
-
-    public void pindah2(KeyEvent evt, Button kiri, TextBox kanan) {
-        if(evt.getKeyCode()==KeyEvent.VK_TAB){
-            kanan.requestFocus();
-        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_UP){
-            kiri.requestFocus();
-        }
-    }
     
     public void pindah(java.awt.event.KeyEvent evt,JTextField kiri,JTextArea kanan) {
         if(evt.getKeyCode()==KeyEvent.VK_ENTER){
@@ -1048,14 +1031,6 @@ public final class validasi {
     }
 
     public void pindah(java.awt.event.KeyEvent evt,JButton kiri,JButton kanan){
-        if(evt.getKeyCode()==KeyEvent.VK_ENTER){
-            kanan.requestFocus();
-        }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_UP){
-            kiri.requestFocus();
-        }
-    }
-    
-    public void pindah(java.awt.event.KeyEvent evt,JButton kiri,JCheckBox kanan){
         if(evt.getKeyCode()==KeyEvent.VK_ENTER){
             kanan.requestFocus();
         }else if(evt.getKeyCode()==KeyEvent.VK_PAGE_UP){
@@ -1490,7 +1465,7 @@ public final class validasi {
                         folder.mkdir();
                         System.out.println("buat folder " + norekammedis);
 
-                    }
+}
                     if (!subfolder.exists()) {
                         subfolder.mkdir();
                         System.out.println("kondisi buat subfolder" + norawat.replaceAll("/", ""));

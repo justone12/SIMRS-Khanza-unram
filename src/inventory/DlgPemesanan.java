@@ -1677,35 +1677,19 @@ private void btnGudangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
             response = root.path("penerimaanobat");
             if(response.isArray()){
                 if(aktifkanbatch.equals("yes")){
-                    if(TCari.getText().trim().equals("")){
-                        for(JsonNode list:response){
+                    for(JsonNode list:response){
+                        if(list.path("KodeBarang").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("NamaBarang").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
                             tabMode.addRow(new Object[]{
                                 "",list.path("SatuanBeli").asText(),list.path("KodeBarang").asText(),list.path("NamaBarang").asText(),list.path("Satuan").asText(),true,list.path("Kadaluwarsa").asText(),list.path("Harga").asDouble(),0,0,0,0,0,"",0,0,0,0,0,0,0,0,0,0,0,list.path("Isi").asDouble(),1,0
                             });
                         }
-                    }else{
-                        for(JsonNode list:response){
-                            if(list.path("KodeBarang").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("NamaBarang").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
-                                tabMode.addRow(new Object[]{
-                                    "",list.path("SatuanBeli").asText(),list.path("KodeBarang").asText(),list.path("NamaBarang").asText(),list.path("Satuan").asText(),true,list.path("Kadaluwarsa").asText(),list.path("Harga").asDouble(),0,0,0,0,0,"",0,0,0,0,0,0,0,0,0,0,0,list.path("Isi").asDouble(),1,0
-                                });
-                            }
-                        }
                     }
                 }else{
-                    if(TCari.getText().trim().equals("")){
-                        for(JsonNode list:response){
+                    for(JsonNode list:response){
+                        if(list.path("KodeBarang").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("NamaBarang").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
                             tabMode.addRow(new Object[]{
                                 "",list.path("SatuanBeli").asText(),list.path("KodeBarang").asText(),list.path("NamaBarang").asText(),list.path("Satuan").asText(),false,list.path("Kadaluwarsa").asText(),list.path("Harga").asDouble(),0,0,0,0,0,"",0,0,0,0,0,0,0,0,0,0,0,list.path("Isi").asDouble(),1,0
                             });
-                        }
-                    }else{
-                        for(JsonNode list:response){
-                            if(list.path("KodeBarang").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("NamaBarang").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
-                                tabMode.addRow(new Object[]{
-                                    "",list.path("SatuanBeli").asText(),list.path("KodeBarang").asText(),list.path("NamaBarang").asText(),list.path("Satuan").asText(),false,list.path("Kadaluwarsa").asText(),list.path("Harga").asDouble(),0,0,0,0,0,"",0,0,0,0,0,0,0,0,0,0,0,list.path("Isi").asDouble(),1,0
-                                });
-                            }
                         }
                     }
                 }

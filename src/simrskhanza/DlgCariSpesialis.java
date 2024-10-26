@@ -102,6 +102,7 @@ public final class DlgCariSpesialis extends javax.swing.JDialog {
             });
         }
     }
+    private DlgSpesialis png_jawab=new DlgSpesialis(null,false);
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -293,7 +294,8 @@ public final class DlgCariSpesialis extends javax.swing.JDialog {
 
     private void BtnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTambahActionPerformed
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        DlgSpesialis png_jawab=new DlgSpesialis(null,false);
+        
+        //png_jawab.setModal(true);
         png_jawab.emptTeks();
         png_jawab.isCek();
         png_jawab.setSize(internalFrame1.getWidth()-20,internalFrame1.getHeight()-20);
@@ -402,20 +404,11 @@ public final class DlgCariSpesialis extends javax.swing.JDialog {
             Valid.tabelKosong(tabMode);
             response = root.path("spesialis");
             if(response.isArray()){
-                if(TCari.getText().trim().equals("")){
-                    for(JsonNode list:response){
+                for(JsonNode list:response){
+                    if(list.path("KodeSpesialis").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("NamaSpesialis").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
                         tabMode.addRow(new Object[]{
                             list.path("KodeSpesialis").asText(),list.path("NamaSpesialis").asText()
-                        }); 
-                    }
-                }else{
-                    for(JsonNode list:response){
-                        if(list.path("KodeSpesialis").asText().toLowerCase().contains(TCari.getText().toLowerCase())||list.path("NamaSpesialis").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
-                            tabMode.addRow(new Object[]{
-                                list.path("KodeSpesialis").asText(),list.path("NamaSpesialis").asText()
-                            });                    
-                        }
-                    }
+                        });                    }
                 }
             }
             myObj.close();

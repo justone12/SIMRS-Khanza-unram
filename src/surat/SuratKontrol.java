@@ -60,7 +60,7 @@ public class SuratKontrol extends javax.swing.JDialog {
                 "Tahun","No.RM","Nama Pasien","Diagnosa","Terapi","Alasan 1","Alasan 2",
                 "Rencana Tindak Lanjut 1","Rencana Tindak Lanjut 2","Periksa Kembali",
                 "Tanggal Surat","No.Surat","No.Reg","Kode Dokter","Nama Dokter",
-                "Kode Poli","Nama Poli","Status"
+                "Kode Poli","Nama Poli","Status","No. Rawat"
             }){
               @Override public boolean isCellEditable(int rowIndex, int colIndex){return false;}
         };
@@ -70,7 +70,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         tbObat.setPreferredScrollableViewportSize(new Dimension(500,500));
         tbObat.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
-        for (i = 0; i < 18; i++) {
+        for (i = 0; i < 19; i++) {
             TableColumn column = tbObat.getColumnModel().getColumn(i);
             if(i==0){
                 column.setMinWidth(0);
@@ -111,6 +111,8 @@ public class SuratKontrol extends javax.swing.JDialog {
                 column.setPreferredWidth(150);
             }else if(i==17){
                 column.setPreferredWidth(90);
+            }else if(i==18){
+                column.setPreferredWidth(90);
             }
         }
         tbObat.setDefaultRenderer(Object.class, new WarnaTable());
@@ -119,7 +121,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         TNoRM.setDocument(new batasInput((byte)15).getKata(TNoRM));
         TCari.setDocument(new batasInput((byte)100).getKata(TCari));
         Diagnosa.setDocument(new batasInput((int)50).getKata(Diagnosa));
-        Terapi.setDocument(new batasInput((int)200).getKata(Terapi));
+        Terapi.setDocument(new batasInput((int)50).getKata(Terapi));
         Alasan1.setDocument(new batasInput((int)50).getKata(Alasan1));
         Alasan2.setDocument(new batasInput((int)50).getKata(Alasan2));
         Rtl1.setDocument(new batasInput((int)50).getKata(Rtl1));
@@ -297,6 +299,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         buttonGroup1 = new javax.swing.ButtonGroup();
         jPopupMenu1 = new javax.swing.JPopupMenu();
         MnSurat = new javax.swing.JMenuItem();
+        NoRawat = new widget.TextBox();
         internalFrame1 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbObat = new widget.Table();
@@ -380,6 +383,9 @@ public class SuratKontrol extends javax.swing.JDialog {
             }
         });
         jPopupMenu1.add(MnSurat);
+
+        NoRawat.setText("textBox1");
+        NoRawat.setName("NoRawat"); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -622,7 +628,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         R2.setPreferredSize(new java.awt.Dimension(90, 23));
         panelCari.add(R2);
 
-        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05-01-2023" }));
+        DTPCari1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-10-2024" }));
         DTPCari1.setDisplayFormat("dd-MM-yyyy");
         DTPCari1.setName("DTPCari1"); // NOI18N
         DTPCari1.setOpaque(false);
@@ -645,7 +651,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         jLabel22.setPreferredSize(new java.awt.Dimension(25, 23));
         panelCari.add(jLabel22);
 
-        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05-01-2023" }));
+        DTPCari2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-10-2024" }));
         DTPCari2.setDisplayFormat("dd-MM-yyyy");
         DTPCari2.setName("DTPCari2"); // NOI18N
         DTPCari2.setOpaque(false);
@@ -666,7 +672,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         R3.setPreferredSize(new java.awt.Dimension(85, 23));
         panelCari.add(R3);
 
-        DTPCari3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05-01-2023" }));
+        DTPCari3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-10-2024" }));
         DTPCari3.setDisplayFormat("dd-MM-yyyy");
         DTPCari3.setName("DTPCari3"); // NOI18N
         DTPCari3.setOpaque(false);
@@ -689,7 +695,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         jLabel25.setPreferredSize(new java.awt.Dimension(25, 23));
         panelCari.add(jLabel25);
 
-        DTPCari4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05-01-2023" }));
+        DTPCari4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-10-2024" }));
         DTPCari4.setDisplayFormat("dd-MM-yyyy");
         DTPCari4.setName("DTPCari4"); // NOI18N
         DTPCari4.setOpaque(false);
@@ -773,7 +779,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         TPasien.setBounds(185, 10, 190, 23);
 
         TanggalSurat.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalSurat.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05-01-2023 12:32:11" }));
+        TanggalSurat.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-10-2024 13:07:08" }));
         TanggalSurat.setDisplayFormat("dd-MM-yyyy HH:mm:ss");
         TanggalSurat.setName("TanggalSurat"); // NOI18N
         TanggalSurat.setOpaque(false);
@@ -928,7 +934,7 @@ public class SuratKontrol extends javax.swing.JDialog {
         jLabel14.setBounds(0, 160, 92, 23);
 
         TanggalPeriksa.setForeground(new java.awt.Color(50, 70, 50));
-        TanggalPeriksa.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05-01-2023 12:32:11" }));
+        TanggalPeriksa.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "22-10-2024 13:07:08" }));
         TanggalPeriksa.setDisplayFormat("dd-MM-yyyy HH:mm:ss");
         TanggalPeriksa.setName("TanggalPeriksa"); // NOI18N
         TanggalPeriksa.setOpaque(false);
@@ -1170,7 +1176,8 @@ public class SuratKontrol extends javax.swing.JDialog {
                     tabMode.getValueAt(i,14).toString()+"','"+
                     tabMode.getValueAt(i,15).toString()+"','"+
                     tabMode.getValueAt(i,16).toString()+"','"+
-                    tabMode.getValueAt(i,17).toString()+"','','','','','','','','','','','','','','','','','','',''","Rekap Nota Pembayaran");
+                    tabMode.getValueAt(i,17).toString()+"','"+
+                    tabMode.getValueAt(i,18).toString()+"','','','','','','','','','','','','','','','','','','',''","Rekap Nota Pembayaran");
             }
              
             Valid.MyReport("rptSKDPBPJS.jasper","report","::[ Laporan Daftar Surat Kontrol ]::",param);
@@ -1303,10 +1310,10 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             Valid.textKosong(Diagnosa,"Diagnosa");
         }else{
             if(tbObat.getSelectedRow()!= -1){
-                if(Sequel.mengedittf("skdp_bpjs","tahun=? and no_antrian=?","tahun=?,no_rkm_medis=?,diagnosa=?,terapi=?,alasan1=?,alasan2=?,rtl1=?,rtl2=?,tanggal_datang=?,tanggal_rujukan=?,no_antrian=?,kd_dokter=?,status=?",15,new String[]{
+                if(Sequel.mengedittf("skdp_bpjs","tahun=? and no_antrian=?","tahun=?,no_rkm_medis=?,diagnosa=?,terapi=?,alasan1=?,alasan2=?,rtl1=?,rtl2=?,tanggal_datang=?,tanggal_rujukan=?,no_antrian=?,kd_dokter=?,status=?,no_rawat=?",16,new String[]{
                         TanggalPeriksa.getSelectedItem().toString().substring(6,10),TNoRM.getText(),Diagnosa.getText(),Terapi.getText(),
                         Alasan1.getText(),Alasan2.getText(),Rtl1.getText(),Rtl2.getText(),Valid.SetTgl(TanggalPeriksa.getSelectedItem()+""),
-                        Valid.SetTgl(TanggalSurat.getSelectedItem()+""),NoSurat.getText(),KdDokter.getText(),Status.getSelectedItem().toString(),
+                        Valid.SetTgl(TanggalSurat.getSelectedItem()+""),NoSurat.getText(),KdDokter.getText(),Status.getSelectedItem().toString(),NoRawat.getText(),
                         tbObat.getValueAt(tbObat.getSelectedRow(),0).toString(),tbObat.getValueAt(tbObat.getSelectedRow(),11).toString()
                   })==true){
                     Sequel.mengedit3("booking_registrasi","no_rkm_medis=? and tanggal_periksa=?","tanggal_booking=?,no_rkm_medis=?,tanggal_periksa=?,kd_dokter=?,kd_poli=?,no_reg=?",8,new String[]{
@@ -1333,6 +1340,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                     tbObat.setValueAt(KdPoli.getText(),tbObat.getSelectedRow(),15);
                     tbObat.setValueAt(NmPoli.getText(),tbObat.getSelectedRow(),16);
                     tbObat.setValueAt(Status.getSelectedItem().toString(),tbObat.getSelectedRow(),17);
+                    tbObat.setValueAt(NoRawat.getText(),tbObat.getSelectedRow(),18);
                     emptTeks();
                 }
             }else{
@@ -1556,6 +1564,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private javax.swing.JMenuItem MnSurat;
     private widget.TextBox NmDokter;
     private widget.TextBox NmPoli;
+    private widget.TextBox NoRawat;
     private widget.TextBox NoReg;
     private widget.TextBox NoSurat;
     private javax.swing.JPanel PanelInput;
@@ -1615,7 +1624,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                     "select skdp_bpjs.tahun,skdp_bpjs.no_rkm_medis,pasien.nm_pasien,"+
                     "skdp_bpjs.diagnosa,skdp_bpjs.terapi,skdp_bpjs.alasan1,skdp_bpjs.alasan2,"+
                     "skdp_bpjs.rtl1,skdp_bpjs.rtl2,skdp_bpjs.tanggal_datang,skdp_bpjs.tanggal_rujukan,"+
-                    "skdp_bpjs.no_antrian,skdp_bpjs.kd_dokter,dokter.nm_dokter,skdp_bpjs.status "+
+                    "skdp_bpjs.no_antrian,skdp_bpjs.kd_dokter,dokter.nm_dokter,skdp_bpjs.status,skdp_bpjs.no_rawat "+
                     "from skdp_bpjs inner join pasien inner join dokter on "+
                     "skdp_bpjs.no_rkm_medis=pasien.no_rkm_medis and skdp_bpjs.kd_dokter=dokter.kd_dokter "+
                     "where "+status+" and skdp_bpjs.no_rkm_medis like ? or "+
@@ -1664,7 +1673,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                         rs.getString("alasan2"),rs.getString("rtl1"),rs.getString("rtl2"),
                         rs.getString("tanggal_datang"),rs.getString("tanggal_rujukan"),rs.getString("no_antrian"),
                         noantri,rs.getString("kd_dokter"),rs.getString("nm_dokter"),kdpoli,
-                        nmpoli,rs.getString("status")
+                        nmpoli,rs.getString("status"),rs.getString("no_rawat")
                     });                    
                 }
             } catch (Exception e) {
@@ -1737,25 +1746,28 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             KdPoli.setText(tbObat.getValueAt(tbObat.getSelectedRow(),15).toString());
             NmPoli.setText(tbObat.getValueAt(tbObat.getSelectedRow(),16).toString());
             Status.setSelectedItem(tbObat.getValueAt(tbObat.getSelectedRow(),17).toString());
+            NoRawat.setText(tbObat.getValueAt(tbObat.getSelectedRow(),18).toString());
         }
     }
     
-    public void setNoRm(String norm,String nama) {
+    public void setNoRm(String norm,String nama,String norawat) {
         TNoRM.setText(norm);
         TPasien.setText(nama);
         TCari.setText(norm);
+        NoRawat.setText(norawat);
         ChkInput.setSelected(true);
         isForm();
         tampil();
     }
     
-    public void setNoRm(String norm,String nama,String kodepoli,String namapoli,String kodedokter,String namadokter) {
+    public void setNoRm(String norm,String nama,String kodepoli,String namapoli,String kodedokter,String namadokter, String norawat) {
         TNoRM.setText(norm);
         TPasien.setText(nama);
         KdPoli.setText(kodepoli);
         NmPoli.setText(namapoli);
         KdDokter.setText(kodedokter);
         NmDokter.setText(namadokter);
+        NoRawat.setText(norawat);
         TCari.setText(norm);
         ChkInput.setSelected(true);
         isForm();
@@ -1788,10 +1800,11 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     }
 
     private void isBooking(){
-        if(Sequel.menyimpantf("skdp_bpjs","?,?,?,?,?,?,?,?,?,?,?,?,?","Tahun dan nomor surat",13,new String[]{
+        if(Sequel.menyimpantf("skdp_bpjs","?,?,?,?,?,?,?,?,?,?,?,?,?,?","Tahun dan nomor surat",14,new String[]{
              TanggalPeriksa.getSelectedItem().toString().substring(6,10),TNoRM.getText(),Diagnosa.getText(),Terapi.getText(),
              Alasan1.getText(),Alasan2.getText(),Rtl1.getText(),Rtl2.getText(),Valid.SetTgl(TanggalPeriksa.getSelectedItem()+"")+" "+TanggalPeriksa.getSelectedItem().toString().substring(11,19),
-             Valid.SetTgl(TanggalSurat.getSelectedItem()+"")+" "+TanggalSurat.getSelectedItem().toString().substring(11,19),NoSurat.getText(),KdDokter.getText(),Status.getSelectedItem().toString()
+             Valid.SetTgl(TanggalSurat.getSelectedItem()+"")+" "+TanggalSurat.getSelectedItem().toString().substring(11,19),NoSurat.getText(),KdDokter.getText(),Status.getSelectedItem().toString(),
+             NoRawat.getText()
          })==true){
              Sequel.menyimpan2("booking_registrasi","?,?,?,?,?,?,?,?,?,?,?","Pasien dan Tanggal",11,new String[]{
                 Valid.SetTgl(TanggalSurat.getSelectedItem()+""),TanggalSurat.getSelectedItem().toString().substring(11,19),TNoRM.getText(),
@@ -1804,7 +1817,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                 TanggalPeriksa.getSelectedItem().toString().substring(6,10),TNoRM.getText(),TPasien.getText(),Diagnosa.getText(),Terapi.getText(),Alasan1.getText(),Alasan2.getText(),
                 Rtl1.getText(),Rtl2.getText(),Valid.SetTgl(TanggalPeriksa.getSelectedItem()+"")+" "+TanggalPeriksa.getSelectedItem().toString().substring(11,19),
                 Valid.SetTgl(TanggalSurat.getSelectedItem()+"")+" "+TanggalSurat.getSelectedItem().toString().substring(11,19),NoSurat.getText(),NoReg.getText(),
-                KdDokter.getText(),NmDokter.getText(),KdPoli.getText(),NmPoli.getText(),Status.getSelectedItem().toString()
+                KdDokter.getText(),NmDokter.getText(),KdPoli.getText(),NmPoli.getText(),Status.getSelectedItem().toString(),NoRawat.getText()
              });
              emptTeks();
              LCount.setText(""+tabMode.getRowCount());
@@ -1814,124 +1827,184 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     public void SuratKontrolKlaim(String nomorrawat, String nomorrm) {
 
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        String kodedokter = Sequel.cariIsi("select skdp_bpjs_new.kd_dokter from skdp_bpjs_new where skdp_bpjs_new.no_rawat='" + nomorrawat + "'");
-        String kodepoli = Sequel.cariIsi("select reg_periksa.kd_poli from reg_periksa where reg_periksa.no_rawat='" + nomorrawat + "'");
-        String kodepj = Sequel.cariIsi("select reg_periksa.kd_pj from reg_periksa where reg_periksa.no_rawat='" + nomorrawat + "'");
-        String tglperiksa = Sequel.cariIsi("select skdp_bpjs_new.tanggal_periksakembali from skdp_bpjs_new where skdp_bpjs_new.no_rawat='" + nomorrawat + "'");
-        String antrianbooking = Sequel.cariIsi("SELECT\n"
-                + "	concat('A',booking_registrasi.no_reg)\n"
-                + "FROM\n"
-                + "	booking_registrasi where booking_registrasi.no_rkm_medis='" + nomorrm + "' and booking_registrasi.kd_dokter='" + kodedokter + "' and booking_registrasi.kd_poli='" + kodepoli + "' and booking_registrasi.tanggal_periksa='" + tglperiksa + "'");
+        try {
+            ps=koneksi.prepareStatement(
+                    "select skdp_bpjs.tahun,skdp_bpjs.no_rkm_medis,pasien.nm_pasien,"+
+                    "skdp_bpjs.diagnosa,skdp_bpjs.terapi,skdp_bpjs.alasan1,skdp_bpjs.alasan2,"+
+                    "skdp_bpjs.rtl1,skdp_bpjs.rtl2,skdp_bpjs.tanggal_datang,skdp_bpjs.tanggal_rujukan,"+
+                    "skdp_bpjs.no_antrian,skdp_bpjs.kd_dokter,dokter.nm_dokter,skdp_bpjs.status,skdp_bpjs.no_rawat "+
+                    "from skdp_bpjs inner join pasien inner join dokter on "+
+                    "skdp_bpjs.no_rkm_medis=pasien.no_rkm_medis and skdp_bpjs.kd_dokter=dokter.kd_dokter "+
+                    "where skdp_bpjs.no_rkm_medis=? and skdp_bpjs.no_rawat=?");
+            try {
+                ps.setString(1,nomorrm);
+                ps.setString(2,nomorrawat);
+                rs=ps.executeQuery();
+                rs.next();
+                    kdpoli="";nmpoli="";noantri="";
+                    ps2=koneksi.prepareStatement(
+                            "select booking_registrasi.kd_poli,poliklinik.nm_poli,booking_registrasi.no_reg "+
+                            "from booking_registrasi inner join poliklinik on booking_registrasi.kd_poli=poliklinik.kd_poli "+
+                            "where booking_registrasi.kd_dokter=? and booking_registrasi.tanggal_periksa=? and booking_registrasi.no_rkm_medis=?");
+                    try {
+                        ps2.setString(1,rs.getString("kd_dokter"));
+                        ps2.setString(2,rs.getString("tanggal_datang").substring(0,10));
+                        ps2.setString(3,rs.getString("no_rkm_medis"));
+                        rs2=ps2.executeQuery();
+                        if(rs2.next()){
+                            kdpoli=rs2.getString("kd_poli");
+                            nmpoli=rs2.getString("nm_poli");
+                            noantri=rs2.getString("no_reg");
+                        }
+                    } catch (Exception e) {
+                        System.out.println("Notif : "+e);
+                    } finally{
+                        if(rs2!=null){
+                            rs2.close();
+                        }
+                        if(ps2!=null){
+                            ps2.close();
+                        }
+                    }
+                    Map<String, Object> param = new HashMap<>();  
+                    param.put("namars",akses.getnamars());
+                    param.put("alamatrs",akses.getalamatrs());
+                    param.put("kotars",akses.getkabupatenrs());
+                    param.put("propinsirs",akses.getpropinsirs());
+                    param.put("kontakrs",akses.getkontakrs());
+                    param.put("emailrs",akses.getemailrs());   
+                    param.put("logo",Sequel.cariGambar("select setting.logo from setting")); 
+                    finger=Sequel.cariIsi("select sha1(sidikjari.sidikjari) from sidikjari inner join pegawai on pegawai.id=sidikjari.id where pegawai.nik=?",rs.getString("kd_dokter"));
+                    param.put("finger","Dikeluarkan di "+akses.getnamars()+", Kabupaten/Kota "+akses.getkabupatenrs()+"\nDitandatangani secara elektronik oleh "+rs.getString("nm_dokter")+"\nID "+(finger.equals("")?rs.getString("kd_dokter"):finger)+"\n"+Valid.SetTgl3(rs.getString("tanggal_datang")));
+                    Sequel.queryu("delete from temporary_booking_registrasi");                
+                    Sequel.menyimpan("temporary_booking_registrasi","'0','"+
+                        rs.getInt("tahun")+"','"+
+                        rs.getString("no_rkm_medis")+"','"+
+                        rs.getString("nm_pasien")+"','"+
+                        rs.getString("diagnosa")+"','"+
+                        rs.getString("terapi")+"','"+
+                        rs.getString("alasan1")+"','"+
+                        rs.getString("alasan2")+"','"+
+                        rs.getString("rtl1")+"','"+
+                        rs.getString("rtl2")+"','"+
+                        rs.getString("tanggal_datang")+"','"+
+                        rs.getString("tanggal_rujukan")+"','"+
+                        rs.getString("no_antrian")+"','"+
+                        noantri+"','"+
+                        rs.getString("kd_dokter")+"','"+
+                        rs.getString("nm_dokter")+"','"+
+                        kdpoli+"','"+
+                        nmpoli+"','"+
+                        rs.getString("status")+"','"+
+                        rs.getString("no_rawat")+"','','','','','','','','','','','','','','','','','',''","Surat Kontrol");
 
-        Map<String, Object> param = new HashMap<>();
-        param.put("namars", akses.getnamars());
-        param.put("alamatrs", akses.getalamatrs());
-        param.put("kotars", akses.getkabupatenrs());
-        param.put("propinsirs", akses.getpropinsirs());
-        param.put("kontakrs", akses.getkontakrs());
-        param.put("emailrs", akses.getemailrs());
-        param.put("antrianbooking", antrianbooking);
-        if (kodepj.equals("BPJ")) {
-            param.put("tanggalrujukan", Sequel.cariIsi("SELECT	concat('No SEP :', bridging_sep.no_sep,' Tanggal Rujukan :', DATE_FORMAT(bridging_sep.tglrujukan,'%d-%m-%Y'),' Berlaku sampai : ',DATE_FORMAT(DATE_ADD(bridging_sep.tglrujukan, INTERVAL 89 DAY),'%d-%m-%Y')) FROM bridging_sep where bridging_sep.no_rawat='" + nomorrawat + "' "));
-        } else {
-            param.put("tanggalrujukan", "");
+                    Valid.MyReport("rptSuratSKDPBPJS.jasper","report","::[ Surat Kontrol ]::",param); 
+                    this.setCursor(Cursor.getDefaultCursor());
+                    
+            } catch (Exception e) {
+                System.out.println("Notif : "+e);
+            } finally{
+                if(rs!=null){
+                    rs.close();
+                }
+                if(ps!=null){
+                    ps.close();
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Notif : "+e);
         }
-        param.put("logo", Sequel.cariGambar("select logo from setting"));
-        Valid.MyReportqry("rptSuratKontrol.jasper", "report", "::[ Surat Kontrol ]::",
-                "SELECT DISTINCT\n"
-                + "	pasien.no_rkm_medis, \n"
-                + "	pasien.nm_pasien, \n"
-                + "	pasien.jk, \n"
-                + "	pasien.tgl_lahir, \n"
-                + "	skdp_bpjs_new.diagnosa, \n"
-                + "	skdp_bpjs_new.tl, \n"
-                + "	penjab.kd_pj, \n"
-                + "	penjab.png_jawab, \n"
-                + "	skdp_bpjs_new.tanggal_surat, \n"
-                + "	skdp_bpjs_new.tanggal_periksakembali, \n"
-                + "	pegawai.nik, \n"
-                + "	pegawai.nama, pegawai.jbtn \n"
-                + "FROM\n"
-                + "	skdp_bpjs_new\n"
-                + "	INNER JOIN\n"
-                + "	pasien\n"
-                + "	ON \n"
-                + "		skdp_bpjs_new.no_rkm_medis = pasien.no_rkm_medis\n"
-                + "	INNER JOIN\n"
-                + "	pegawai\n"
-                + "	ON \n"
-                + "		skdp_bpjs_new.kd_dokter = pegawai.nik\n"
-                + "	INNER JOIN\n"
-                + "	reg_periksa\n"
-                + "	ON \n"
-                + "		pasien.no_rkm_medis = reg_periksa.no_rkm_medis\n"
-                + "	INNER JOIN\n"
-                + "	penjab\n"
-                + "	ON \n"
-                + "		skdp_bpjs_new.kd_pj = penjab.kd_pj"
-                + " where skdp_bpjs_new.no_rawat='" + nomorrawat + "'", param);
-        this.setCursor(Cursor.getDefaultCursor());
     }
     
     public void SuratKontrolKlaimPDF(String nomorrawat, String nomorrm) {
 
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        String kodedokter = Sequel.cariIsi("select skdp_bpjs_new.kd_dokter from skdp_bpjs_new where skdp_bpjs_new.no_rawat='" + nomorrawat + "'");
-        String kodepoli = Sequel.cariIsi("select reg_periksa.kd_poli from reg_periksa where reg_periksa.no_rawat='" + nomorrawat + "'");
-        String kodepj = Sequel.cariIsi("select reg_periksa.kd_pj from reg_periksa where reg_periksa.no_rawat='" + nomorrawat + "'");
-        String tglperiksa = Sequel.cariIsi("select skdp_bpjs_new.tanggal_periksakembali from skdp_bpjs_new where skdp_bpjs_new.no_rawat='" + nomorrawat + "'");
-        String antrianbooking = Sequel.cariIsi("SELECT\n"
-                + "	concat('A',booking_registrasi.no_reg)\n"
-                + "FROM\n"
-                + "	booking_registrasi where booking_registrasi.no_rkm_medis='" + nomorrm + "' and booking_registrasi.kd_dokter='" + kodedokter + "' and booking_registrasi.kd_poli='" + kodepoli + "' and booking_registrasi.tanggal_periksa='" + tglperiksa + "'");
-
-        Map<String, Object> param = new HashMap<>();
-        param.put("namars", akses.getnamars());
-        param.put("alamatrs", akses.getalamatrs());
-        param.put("kotars", akses.getkabupatenrs());
-        param.put("propinsirs", akses.getpropinsirs());
-        param.put("kontakrs", akses.getkontakrs());
-        param.put("emailrs", akses.getemailrs());
-        param.put("antrianbooking", antrianbooking);
-        if (kodepj.equals("BPJ")) {
-            param.put("tanggalrujukan", Sequel.cariIsi("SELECT	concat('No SEP :', bridging_sep.no_sep,' Tanggal Rujukan :', DATE_FORMAT(bridging_sep.tglrujukan,'%d-%m-%Y'),' Berlaku sampai : ',DATE_FORMAT(DATE_ADD(bridging_sep.tglrujukan, INTERVAL 89 DAY),'%d-%m-%Y')) FROM bridging_sep where bridging_sep.no_rawat='" + nomorrawat + "' "));
-        } else {
-            param.put("tanggalrujukan", "");
+        try {
+            ps=koneksi.prepareStatement(
+                    "select skdp_bpjs.tahun,skdp_bpjs.no_rkm_medis,pasien.nm_pasien,"+
+                    "skdp_bpjs.diagnosa,skdp_bpjs.terapi,skdp_bpjs.alasan1,skdp_bpjs.alasan2,"+
+                    "skdp_bpjs.rtl1,skdp_bpjs.rtl2,skdp_bpjs.tanggal_datang,skdp_bpjs.tanggal_rujukan,"+
+                    "skdp_bpjs.no_antrian,skdp_bpjs.kd_dokter,dokter.nm_dokter,skdp_bpjs.status,skdp_bpjs.no_rawat "+
+                    "from skdp_bpjs inner join pasien inner join dokter on "+
+                    "skdp_bpjs.no_rkm_medis=pasien.no_rkm_medis and skdp_bpjs.kd_dokter=dokter.kd_dokter "+
+                    "where skdp_bpjs.no_rkm_medis=? and skdp_bpjs.no_rawat=?");
+            try {
+                ps.setString(1,nomorrm);
+                ps.setString(2,nomorrawat);
+                rs=ps.executeQuery();
+                rs.next();
+                    kdpoli="";nmpoli="";noantri="";
+                    ps2=koneksi.prepareStatement(
+                            "select booking_registrasi.kd_poli,poliklinik.nm_poli,booking_registrasi.no_reg "+
+                            "from booking_registrasi inner join poliklinik on booking_registrasi.kd_poli=poliklinik.kd_poli "+
+                            "where booking_registrasi.kd_dokter=? and booking_registrasi.tanggal_periksa=? and booking_registrasi.no_rkm_medis=?");
+                    try {
+                        ps2.setString(1,rs.getString("kd_dokter"));
+                        ps2.setString(2,rs.getString("tanggal_datang").substring(0,10));
+                        ps2.setString(3,rs.getString("no_rkm_medis"));
+                        rs2=ps2.executeQuery();
+                        if(rs2.next()){
+                            kdpoli=rs2.getString("kd_poli");
+                            nmpoli=rs2.getString("nm_poli");
+                            noantri=rs2.getString("no_reg");
+                        }
+                    
+                    Map<String, Object> param = new HashMap<>();  
+                    param.put("namars",akses.getnamars());
+                    param.put("alamatrs",akses.getalamatrs());
+                    param.put("kotars",akses.getkabupatenrs());
+                    param.put("propinsirs",akses.getpropinsirs());
+                    param.put("kontakrs",akses.getkontakrs());
+                    param.put("emailrs",akses.getemailrs());   
+                    param.put("logo",Sequel.cariGambar("select setting.logo from setting")); 
+                    finger=Sequel.cariIsi("select sha1(sidikjari.sidikjari) from sidikjari inner join pegawai on pegawai.id=sidikjari.id where pegawai.nik=?",rs.getString("kd_dokter"));
+                    param.put("finger","Dikeluarkan di "+akses.getnamars()+", Kabupaten/Kota "+akses.getkabupatenrs()+"\nDitandatangani secara elektronik oleh "+rs.getString("nm_dokter")+"\nID "+(finger.equals("")?rs.getString("kd_dokter"):finger)+"\n"+Valid.SetTgl3(rs.getString("tanggal_datang")));
+                    Sequel.queryu("delete from temporary_booking_registrasi");                
+                    Sequel.menyimpan("temporary_booking_registrasi","'0','"+
+                        rs.getInt("tahun")+"','"+
+                        rs.getString("no_rkm_medis")+"','"+
+                        rs.getString("nm_pasien")+"','"+
+                        rs.getString("diagnosa")+"','"+
+                        rs.getString("terapi")+"','"+
+                        rs.getString("alasan1")+"','"+
+                        rs.getString("alasan2")+"','"+
+                        rs.getString("rtl1")+"','"+
+                        rs.getString("rtl2")+"','"+
+                        rs.getString("tanggal_datang")+"','"+
+                        rs.getString("tanggal_rujukan")+"','"+
+                        rs.getString("no_antrian")+"','"+
+                        noantri+"','"+
+                        rs.getString("kd_dokter")+"','"+
+                        rs.getString("nm_dokter")+"','"+
+                        kdpoli+"','"+
+                        nmpoli+"','"+
+                        rs.getString("status")+"','"+
+                        rs.getString("no_rawat")+"','','','','','','','','','','','','','','','','','',''","Surat Kontrol");
+                    
+                    Valid.MyReportPDFKlaim("rptSuratSKDPBPJS.jasper","report","7SURKONRS",param,"hasilkompilasiklaim",nomorrawat.replaceAll("/", "")); 
+                    this.setCursor(Cursor.getDefaultCursor());
+                    } catch (Exception e) {
+                        System.out.println("Notif : "+e);
+                    } finally{
+                        if(rs2!=null){
+                            rs2.close();
+                        }
+                        if(ps2!=null){
+                            ps2.close();
+                        }
+                    }
+            } catch (Exception e) {
+                System.out.println("Notif : "+e);
+            } finally{
+                if(rs!=null){
+                    rs.close();
+                }
+                if(ps!=null){
+                    ps.close();
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Notif : "+e);
         }
-        param.put("logo", Sequel.cariGambar("select logo from setting"));
-        Valid.MyReportqrypdfKlaim("rptSuratKontrol.jasper", "report", "5SURKONRS",
-                "SELECT DISTINCT\n"
-                + "	pasien.no_rkm_medis, \n"
-                + "	pasien.nm_pasien, \n"
-                + "	pasien.jk, \n"
-                + "	pasien.tgl_lahir, \n"
-                + "	skdp_bpjs_new.diagnosa, \n"
-                + "	skdp_bpjs_new.tl, \n"
-                + "	penjab.kd_pj, \n"
-                + "	penjab.png_jawab, \n"
-                + "	skdp_bpjs_new.tanggal_surat, \n"
-                + "	skdp_bpjs_new.tanggal_periksakembali, \n"
-                + "	pegawai.nik, \n"
-                + "	pegawai.nama, pegawai.jbtn \n"
-                + "FROM\n"
-                + "	skdp_bpjs_new\n"
-                + "	INNER JOIN\n"
-                + "	pasien\n"
-                + "	ON \n"
-                + "		skdp_bpjs_new.no_rkm_medis = pasien.no_rkm_medis\n"
-                + "	INNER JOIN\n"
-                + "	pegawai\n"
-                + "	ON \n"
-                + "		skdp_bpjs_new.kd_dokter = pegawai.nik\n"
-                + "	INNER JOIN\n"
-                + "	reg_periksa\n"
-                + "	ON \n"
-                + "		pasien.no_rkm_medis = reg_periksa.no_rkm_medis\n"
-                + "	INNER JOIN\n"
-                + "	penjab\n"
-                + "	ON \n"
-                + "		skdp_bpjs_new.kd_pj = penjab.kd_pj"
-                + " where skdp_bpjs_new.no_rawat='" + nomorrawat + "'", param, "hasilkompilasiklaim", nomorrawat.replaceAll("/", ""));
-        this.setCursor(Cursor.getDefaultCursor());
     }
 }

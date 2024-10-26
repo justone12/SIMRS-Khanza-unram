@@ -14,7 +14,6 @@ package rekammedis;
 import fungsi.WarnaTable;
 import fungsi.batasInput;
 import fungsi.koneksiDB;
-import fungsi.sekuel;
 import fungsi.validasi;
 import java.awt.Dimension;
 import java.awt.event.KeyEvent;
@@ -34,7 +33,6 @@ public final class RMCariJumlahObat extends javax.swing.JDialog {
     private final DefaultTableModel tabMode;
     private validasi Valid=new validasi();
     private Connection koneksi=koneksiDB.condb();
-    private sekuel Sequel=new sekuel();
     private PreparedStatement ps;
     private ResultSet rs;
     private String norawat="";
@@ -48,37 +46,22 @@ public final class RMCariJumlahObat extends javax.swing.JDialog {
         this.setLocation(10,2);
         setSize(656,250);
 
-        Object[] row={"P","Tanggal","Jam","Obat Diberikan"};
+        Object[] row={"Tanggal","Jam","Obat Diberikan"};
         tabMode=new DefaultTableModel(null,row){
-              @Override public boolean isCellEditable(int rowIndex, int colIndex){
-                boolean a = false;
-                if (colIndex==0) {
-                    a=true;
-                }
-                return a;
-             }
-             Class[] types = new Class[] {
-                java.lang.Boolean.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
-             };
-             @Override
-             public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-             }
+              @Override public boolean isCellEditable(int rowIndex, int colIndex){return false;}
         };
         tbKamar.setModel(tabMode);
         //tbPenyakit.setDefaultRenderer(Object.class, new WarnaTable(panelJudul.getBackground(),tbPenyakit.getBackground()));
         tbKamar.setPreferredScrollableViewportSize(new Dimension(500,500));
         tbKamar.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-        for (z= 0; z < 4; z++) {
+        for (z= 0; z < 3; z++) {
             TableColumn column = tbKamar.getColumnModel().getColumn(z);
             if(z==0){
-                column.setPreferredWidth(20);
-            }else if(z==1){
                 column.setPreferredWidth(65);
-            }else if(z==2){
+            }else if(z==1){
                 column.setPreferredWidth(50);
-            }else if(z==3){
-                column.setPreferredWidth(730);
+            }else if(z==2){
+                column.setPreferredWidth(750);
             }
         }
         tbKamar.setDefaultRenderer(Object.class, new WarnaTable());
@@ -117,9 +100,6 @@ public final class RMCariJumlahObat extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPopupMenu1 = new javax.swing.JPopupMenu();
-        ppPilihSemua = new javax.swing.JMenuItem();
-        ppBersihkan = new javax.swing.JMenuItem();
         internalFrame1 = new widget.InternalFrame();
         Scroll = new widget.ScrollPane();
         tbKamar = new widget.Table();
@@ -131,40 +111,6 @@ public final class RMCariJumlahObat extends javax.swing.JDialog {
         label10 = new widget.Label();
         LCount = new widget.Label();
         BtnKeluar = new widget.Button();
-
-        jPopupMenu1.setName("jPopupMenu1"); // NOI18N
-
-        ppPilihSemua.setBackground(new java.awt.Color(255, 255, 254));
-        ppPilihSemua.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
-        ppPilihSemua.setForeground(new java.awt.Color(50, 50, 50));
-        ppPilihSemua.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
-        ppPilihSemua.setText("Pilih Semua");
-        ppPilihSemua.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        ppPilihSemua.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        ppPilihSemua.setName("ppPilihSemua"); // NOI18N
-        ppPilihSemua.setPreferredSize(new java.awt.Dimension(170, 26));
-        ppPilihSemua.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ppPilihSemuaActionPerformed(evt);
-            }
-        });
-        jPopupMenu1.add(ppPilihSemua);
-
-        ppBersihkan.setBackground(new java.awt.Color(255, 255, 254));
-        ppBersihkan.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
-        ppBersihkan.setForeground(new java.awt.Color(50, 50, 50));
-        ppBersihkan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/picture/category.png"))); // NOI18N
-        ppBersihkan.setText("Hilangkan Pilihan");
-        ppBersihkan.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        ppBersihkan.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        ppBersihkan.setName("ppBersihkan"); // NOI18N
-        ppBersihkan.setPreferredSize(new java.awt.Dimension(170, 26));
-        ppBersihkan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ppBersihkanActionPerformed(evt);
-            }
-        });
-        jPopupMenu1.add(ppBersihkan);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -182,12 +128,10 @@ public final class RMCariJumlahObat extends javax.swing.JDialog {
         internalFrame1.setName("internalFrame1"); // NOI18N
         internalFrame1.setLayout(new java.awt.BorderLayout(1, 1));
 
-        Scroll.setComponentPopupMenu(jPopupMenu1);
         Scroll.setName("Scroll"); // NOI18N
         Scroll.setOpaque(true);
 
         tbKamar.setAutoCreateRowSorter(true);
-        tbKamar.setComponentPopupMenu(jPopupMenu1);
         tbKamar.setName("tbKamar"); // NOI18N
         tbKamar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -354,18 +298,6 @@ public final class RMCariJumlahObat extends javax.swing.JDialog {
         tampil();
     }//GEN-LAST:event_formWindowOpened
 
-    private void ppPilihSemuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ppPilihSemuaActionPerformed
-        for(z=0;z<tbKamar.getRowCount();z++){
-            tbKamar.setValueAt(true,z,0);
-        }
-    }//GEN-LAST:event_ppPilihSemuaActionPerformed
-
-    private void ppBersihkanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ppBersihkanActionPerformed
-        for(z=0;z<tbKamar.getRowCount();z++){
-            tbKamar.setValueAt(false,z,0);
-        }
-    }//GEN-LAST:event_ppBersihkanActionPerformed
-
     /**
     * @param args the command line arguments
     */
@@ -385,17 +317,14 @@ public final class RMCariJumlahObat extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widget.Button BtnAll;
     private widget.Button BtnCari;
-    public widget.Button BtnKeluar;
+    private widget.Button BtnKeluar;
     private widget.Label LCount;
     private widget.ScrollPane Scroll;
     private widget.TextBox TCari;
     private widget.InternalFrame internalFrame1;
-    private javax.swing.JPopupMenu jPopupMenu1;
     private widget.Label label10;
     private widget.Label label9;
     private widget.panelisi panelisi3;
-    private javax.swing.JMenuItem ppBersihkan;
-    private javax.swing.JMenuItem ppPilihSemua;
     private widget.Table tbKamar;
     // End of variables declaration//GEN-END:variables
 
@@ -403,18 +332,18 @@ public final class RMCariJumlahObat extends javax.swing.JDialog {
         Valid.tabelKosong(tabMode);
         try{
             ps=koneksi.prepareStatement(
-                    "select detail_pemberian_obat.tgl_perawatan,detail_pemberian_obat.jam,databarang.nama_brng,detail_pemberian_obat.jml,databarang.kode_sat,"+
-                    "detail_pemberian_obat.no_rawat,detail_pemberian_obat.kode_brng from detail_pemberian_obat inner join databarang "+
-                    "on detail_pemberian_obat.kode_brng=databarang.kode_brng where detail_pemberian_obat.no_rawat=? and "+
-                    "(detail_pemberian_obat.tgl_perawatan like ? or databarang.nama_brng like ?) order by detail_pemberian_obat.tgl_perawatan, detail_pemberian_obat.jam");
+                    "select detail_pemberian_obat.tgl_perawatan,detail_pemberian_obat.jam,databarang.nama_brng, detail_pemberian_obat.jml, "+
+                    "databarang.kode_sat from detail_pemberian_obat inner join databarang on detail_pemberian_obat.kode_brng=databarang.kode_brng where "+
+                    "detail_pemberian_obat.no_rawat=? and (detail_pemberian_obat.tgl_perawatan like ? or databarang.nama_brng like ?) "+
+                    "order by detail_pemberian_obat.tgl_perawatan, detail_pemberian_obat.jam");
             try{
                 ps.setString(1,norawat);
                 ps.setString(2,"%"+TCari.getText().trim()+"%");
                 ps.setString(3,"%"+TCari.getText().trim()+"%");
                 rs=ps.executeQuery();
                 while(rs.next()){
-                    tabMode.addRow(new Object[]{
-                        false,rs.getString(1),rs.getString(2),rs.getString(3)+" : "+rs.getString(4)+" "+rs.getString(5)+" "+Sequel.cariIsi("select aturan_pakai.aturan from aturan_pakai where aturan_pakai.tgl_perawatan='"+rs.getString("tgl_perawatan")+"' and aturan_pakai.jam='"+rs.getString("jam")+"' and aturan_pakai.no_rawat='"+rs.getString("no_rawat")+"' and aturan_pakai.kode_brng='"+rs.getString("kode_brng")+"'")
+                    tabMode.addRow(new String[] {
+                        rs.getString(1),rs.getString(2),rs.getString(3)+" : "+rs.getString(4)+" "+rs.getString(5)
                     });
                 }
             }catch(Exception ex){

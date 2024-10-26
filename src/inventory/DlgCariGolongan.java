@@ -419,19 +419,11 @@ public final class DlgCariGolongan extends javax.swing.JDialog {
             Valid.tabelKosong(tabMode);
             response = root.path("golonganobat");
             if(response.isArray()){
-                if(TCari.getText().trim().equals("")){
-                    for(JsonNode list:response){
+                for(JsonNode list:response){
+                    if(list.path("NamaGolongan").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
                         tabMode.addRow(new Object[]{
                             list.path("KodeGolongan").asText(),list.path("NamaGolongan").asText()
                         });
-                    }
-                }else{
-                    for(JsonNode list:response){
-                        if(list.path("NamaGolongan").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
-                            tabMode.addRow(new Object[]{
-                                list.path("KodeGolongan").asText(),list.path("NamaGolongan").asText()
-                            });
-                        }
                     }
                 }
             }

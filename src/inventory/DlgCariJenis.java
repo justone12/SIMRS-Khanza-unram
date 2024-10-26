@@ -419,19 +419,11 @@ public final class DlgCariJenis extends javax.swing.JDialog {
             Valid.tabelKosong(tabMode);
             response = root.path("jenisobat");
             if(response.isArray()){
-                if(TCari.getText().trim().equals("")){
-                    for(JsonNode list:response){
+                for(JsonNode list:response){
+                    if(list.path("NamaJenis").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
                         tabMode.addRow(new Object[]{
                             list.path("KodeJenis").asText(),list.path("NamaJenis").asText(),list.path("Keterangan").asText()
                         });
-                    }
-                }else{
-                    for(JsonNode list:response){
-                        if(list.path("NamaJenis").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
-                            tabMode.addRow(new Object[]{
-                                list.path("KodeJenis").asText(),list.path("NamaJenis").asText(),list.path("Keterangan").asText()
-                            });
-                        }
                     }
                 }
             }

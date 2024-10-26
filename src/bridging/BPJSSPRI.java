@@ -57,7 +57,7 @@ public class BPJSSPRI extends javax.swing.JDialog {
     private int i=0;
     private BPJSCekReferensiDokterKontrol dokter=new BPJSCekReferensiDokterKontrol(null,false);
     private BPJSCekReferensiSpesialistikKontrol poli=new BPJSCekReferensiSpesialistikKontrol(null,false);
-    public BPJSCekReferensiPenyakit penyakit=new BPJSCekReferensiPenyakit(null,false);
+    private BPJSCekReferensiPenyakit penyakit=new BPJSCekReferensiPenyakit(null,false);
     private HttpHeaders headers;
     private HttpEntity requestEntity;
     private ObjectMapper mapper = new ObjectMapper();
@@ -1690,7 +1690,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             }
         }
     }
-    
+
     public void CetakSPRIKlaim(String nomorsep, String nomorrawat) {
         String nomorsurat = Sequel.cariIsi("select bridging_surat_pri_bpjs.no_surat from bridging_surat_pri_bpjs where bridging_surat_pri_bpjs.no_rawat='" + nomorrawat + "'");
         this.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
@@ -1731,7 +1731,7 @@ private void ChkInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
                 + "on bridging_surat_pri_bpjs.no_rawat=reg_periksa.no_rawat inner join pasien on reg_periksa.no_rkm_medis=pasien.no_rkm_medis "
                 + "where bridging_surat_pri_bpjs.no_surat='" + nomorsurat + "'", param, "hasilkompilasiklaim", nomorrawat.replaceAll("/", ""));
         this.setCursor(Cursor.getDefaultCursor());
-    }
+}
 
 
 }

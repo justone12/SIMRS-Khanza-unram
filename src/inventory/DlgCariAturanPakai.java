@@ -414,19 +414,11 @@ public final class DlgCariAturanPakai extends javax.swing.JDialog {
             Valid.tabelKosong(tabMode);
             response = root.path("aturanpakai");
             if(response.isArray()){
-                if(TCari.getText().trim().equals("")){
-                    for(JsonNode list:response){
+                for(JsonNode list:response){
+                    if(list.path("AturanPakai").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
                         tabMode.addRow(new Object[]{
                             list.path("AturanPakai").asText()
                         });
-                    }
-                }else{
-                    for(JsonNode list:response){
-                        if(list.path("AturanPakai").asText().toLowerCase().contains(TCari.getText().toLowerCase())){
-                            tabMode.addRow(new Object[]{
-                                list.path("AturanPakai").asText()
-                            });
-                        }
                     }
                 }
             }
