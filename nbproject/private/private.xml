@@ -5,7 +5,7 @@
             <url>src/simrskhanza/DlgCariPeriksaRadiologi.java</url>
             <bookmark id="2">
                 <name/>
-                <line>1880</line>
+                <line>1817</line>
                 <key/>
             </bookmark>
         </file>
@@ -20,7 +20,13 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/SIMRS/oprek%20unram/SIMRS-Khanza-unram/src/simrskhanza/DlgKompilasiBerkasKlaimBPJS.java</file>
+            <file>file:/D:/SIMRS/oprek%20unram/SIMRS-Khanza/src/simrskhanza/DlgKompilasiBerkas.java</file>
+            <file>file:/D:/SIMRS/oprek%20unram/SIMRS-Khanza/src/simrskhanza/frmUtama.java</file>
+            <file>file:/D:/SIMRS/oprek%20unram/SIMRS-Khanza/src/fungsi/validasi.java</file>
+            <file>file:/D:/SIMRS/oprek%20unram/SIMRS-Khanza/src/simrskhanza/DlgKompilasiBerkasKlaimBPJS.java</file>
+            <file>file:/D:/SIMRS/oprek%20unram/SIMRS-Khanza/src/surat/SuratKontrol.java</file>
+            <file>file:/D:/SIMRS/oprek%20unram/SIMRS-Khanza/src/bridging/BPJSSuratKontrol.java</file>
+            <file>file:/D:/SIMRS/oprek%20unram/SIMRS-Khanza/src/fungsi/koneksiDB.java</file>
         </group>
     </open-files>
 </project-private>
